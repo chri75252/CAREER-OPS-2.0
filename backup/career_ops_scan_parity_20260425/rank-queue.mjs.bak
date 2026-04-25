@@ -1,0 +1,401 @@
+#!/usr/bin/env node
+
+import { existsSync, readFileSync, renameSync, writeFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import yaml from 'js-yaml';
+
+const root = process.cwd();
+const dryRun = process.argv.includes('--dry-run');
+
+const pipelinePath = resolve(root, 'data', 'pipeline.md');
+const externalJobsPath = resolve(root, 'data', 'external_jobs.json');
+const rankingOutputPath = resolve(root, 'data', 'queue-ranking.json');
+const workflowConfigPath = resolve(root, 'config', 'workflow.yml');
+const portalsPath = resolve(root, 'portals.yml');
+const profilePath = resolve(root, 'config', 'profile.yml');
+
+const DEFAULT_CONFIG = {
+  ranking: {
+    queue_min_score: 45,
+    reject_below_score: 25,
+    weights: {
+      title: 35,
+      role_family: 20,
+      location: 15,
+      source: 10,
+      seniority: 10,
+      company_domain: 5,
+      recency: 5,
+    },
+    tiers: {
+      primary: 80,
+      secondary: 65,
+      stretch: 50,
+      weak: 25,
+    },
+    source_weights: {
+      'career-ops-scan': 10,
+      'greenhouse-api': 9,
+      'ashby-api': 9,
+      'lever-api': 8,
+      linkedin: 7,
+      indeed: 6,
+      glassdoor: 6,
+      bayt: 6,
+      google: 6,
+      zip_recruiter: 6,
+    },
+    location_patterns: {
+      strong: ['remote', 'emea', 'europe', 'united kingdom', 'london', 'dublin', 'germany', 'netherlands', 'uae'],
+      weak_negative: ['onsite only', 'on-site only', 'must be based in us', 'us only'],
+    },
+  },
+};
+
+function safeYaml(path) {
+  if (!existsSync(path)) {
+    return {};
+  }
+  try {
+    return yaml.load(readFileSync(path, 'utf-8')) || {};
+  } catch {
+    return {};
+  }
+}
+
+function safeJson(path) {
+  if (!existsSync(path)) {
+    return [];
+  }
+  try {
+    const parsed = JSON.parse(readFileSync(path, 'utf-8'));
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function mergeDeep(base, override) {
+  if (!override || typeof override !== 'object') {
+    return base;
+  }
+  const out = Array.isArray(base) ? [...base] : { ...base };
+  for (const [key, value] of Object.entries(override)) {
+    if (value && typeof value === 'object' && !Array.isArray(value) && out[key] && typeof out[key] === 'object' && !Array.isArray(out[key])) {
+      out[key] = mergeDeep(out[key], value);
+    } else {
+      out[key] = value;
+    }
+  }
+  return out;
+}
+
+function lowerArray(values) {
+  return (values || []).map(v => String(v || '').toLowerCase().trim()).filter(Boolean);
+}
+
+function matchesAny(text, patterns) {
+  return patterns.some(p => p && text.includes(p));
+}
+
+function parsePendingLine(line) {
+  const trimmed = line.trim();
+  const m = trimmed.match(/^\-\s\[ \]\s(https?:\/\/\S+)(?:\s\|\s([^|]*))?(?:\s\|\s(.+))?$/i);
+  if (!m) {
+    return null;
+  }
+  return {
+    url: (m[1] || '').trim(),
+    company: (m[2] || '').trim(),
+    title: (m[3] || '').trim(),
+  };
+}
+
+function parsePostedAt(value) {
+  if (value == null) {
+    return null;
+  }
+  if (typeof value === 'number') {
+    const ms = value < 1000000000000 ? value * 1000 : value;
+    const d = new Date(ms);
+    return Number.isNaN(d.getTime()) ? null : d;
+  }
+  const s = String(value).trim();
+  if (!s) {
+    return null;
+  }
+  if (/^\d+$/.test(s)) {
+    const n = Number(s);
+    const ms = n < 1000000000000 ? n * 1000 : n;
+    const d = new Date(ms);
+    return Number.isNaN(d.getTime()) ? null : d;
+  }
+  const d = new Date(s);
+  return Number.isNaN(d.getTime()) ? null : d;
+}
+
+function sourceScore(source, cfg) {
+  const sourceMap = cfg.ranking.source_weights || {};
+  const lower = String(source || '').toLowerCase();
+  if (!lower) {
+    return 0;
+  }
+  if (sourceMap[lower] != null) {
+    return Number(sourceMap[lower]) || 0;
+  }
+  for (const [key, value] of Object.entries(sourceMap)) {
+    if (lower.includes(key)) {
+      return Number(value) || 0;
+    }
+  }
+  return 0;
+}
+
+function recencyScore(postedAt, weight) {
+  const date = parsePostedAt(postedAt);
+  if (!date) {
+    return 0;
+  }
+  const now = Date.now();
+  const ageDays = Math.max(0, (now - date.getTime()) / (1000 * 60 * 60 * 24));
+  if (ageDays <= 3) return weight;
+  if (ageDays <= 7) return weight * 0.8;
+  if (ageDays <= 14) return weight * 0.55;
+  return weight * 0.25;
+}
+
+function tierForScore(score, cfg) {
+  const tiers = cfg.ranking.tiers || {};
+  if (score >= Number(tiers.primary || 80)) return 'primary';
+  if (score >= Number(tiers.secondary || 65)) return 'secondary';
+  if (score >= Number(tiers.stretch || 50)) return 'stretch';
+  if (score >= Number(tiers.weak || 25)) return 'weak';
+  return 'reject';
+}
+
+function determineRoleFamily(text) {
+  if (/(implementation|professional services|technical account|customer success)/.test(text)) {
+    return 'delivery';
+  }
+  if (/(solutions engineer|solutions consultant|customer engineer)/.test(text)) {
+    return 'solutions';
+  }
+  if (/(technical program|delivery manager|operations|business systems|revops)/.test(text)) {
+    return 'operations';
+  }
+  return 'general';
+}
+
+function scoreJob(job, external, cfg, portals, profile) {
+  const weights = cfg.ranking.weights || {};
+  const title = String(job.title || external?.title || '').toLowerCase();
+  const company = String(job.company || external?.company || '').toLowerCase();
+  const location = String(external?.location || '').toLowerCase();
+  const source = String(external?.source || '').toLowerCase();
+  const tags = Array.isArray(external?.tags) ? external.tags.join(' ').toLowerCase() : '';
+  const description = String(external?.description || '').toLowerCase();
+  const haystack = `${title} ${company} ${location} ${tags} ${description}`;
+
+  const reasons = [];
+  let score = 0;
+
+  const primaryPatterns = lowerArray(cfg.ranking?.title_patterns?.primary || []);
+  const secondaryPatterns = lowerArray(cfg.ranking?.title_patterns?.secondary || []);
+  const negativePatterns = lowerArray(cfg.ranking?.title_patterns?.negative || []).concat(lowerArray(portals.title_filter?.negative || []));
+
+  if (matchesAny(haystack, negativePatterns)) {
+    score -= 30;
+    reasons.push('NEGATIVE_TITLE');
+  }
+
+  if (matchesAny(haystack, primaryPatterns)) {
+    score += Number(weights.title || 35);
+    reasons.push('TITLE_PRIMARY');
+  } else if (matchesAny(haystack, secondaryPatterns)) {
+    score += Math.round(Number(weights.title || 35) * 0.65);
+    reasons.push('TITLE_SECONDARY');
+  }
+
+  const profileRoleWords = lowerArray(profile.target_roles?.primary || []);
+  if (profileRoleWords.length > 0 && profileRoleWords.some(word => title.includes(word))) {
+    score += Number(weights.role_family || 20);
+    reasons.push('PROFILE_ROLE_MATCH');
+  }
+
+  const locationStrong = lowerArray(cfg.ranking?.location_patterns?.strong || []);
+  const locationWeakNegative = lowerArray(cfg.ranking?.location_patterns?.weak_negative || []);
+
+  if (matchesAny(haystack, locationStrong)) {
+    score += Number(weights.location || 15);
+    reasons.push('LOCATION_STRONG');
+  }
+  if (matchesAny(haystack, locationWeakNegative)) {
+    score -= Number(weights.location || 15);
+    reasons.push('LOCATION_RESTRICTED');
+  }
+
+  if (/(senior|lead|principal|staff|director|head)/.test(haystack)) {
+    score += Math.round(Number(weights.seniority || 10) * 0.8);
+    reasons.push('SENIORITY_STRONG');
+  }
+  if (/(junior|intern|graduate)/.test(haystack)) {
+    score -= Number(weights.seniority || 10);
+    reasons.push('SENIORITY_NEGATIVE');
+  }
+
+  const companyNames = lowerArray((portals.tracked_companies || []).map(c => c?.name));
+  if (companyNames.includes(company)) {
+    score += Number(weights.company_domain || 5);
+    reasons.push('TRACKED_COMPANY');
+  }
+
+  const srcScore = sourceScore(source, cfg);
+  if (srcScore > 0) {
+    score += Math.min(srcScore, Number(weights.source || 10));
+    reasons.push(`SOURCE_${source || 'UNKNOWN'}`.replace(/[^A-Z0-9_]/g, '_'));
+  }
+
+  const recency = recencyScore(external?.posted_at, Number(weights.recency || 5));
+  if (recency > 0) {
+    score += recency;
+    reasons.push('RECENCY_BONUS');
+  }
+
+  score = Math.max(0, Math.min(100, Math.round(score)));
+  const fitTier = tierForScore(score, cfg);
+  const roleFamily = determineRoleFamily(haystack);
+
+  return { rough_score: score, fit_tier: fitTier, role_family: roleFamily, reason_codes: reasons };
+}
+
+function readPipeline() {
+  if (!existsSync(pipelinePath)) {
+    throw new Error(`pipeline.md not found at ${pipelinePath}`);
+  }
+  const raw = readFileSync(pipelinePath, 'utf-8');
+  const lines = raw.split(/\r?\n/);
+  const pendingHeader = lines.findIndex(line => /^##\s+Pendientes/i.test(line.trim()));
+  const processedHeader = lines.findIndex((line, idx) => idx > pendingHeader && /^##\s+Procesadas/i.test(line.trim()));
+
+  if (pendingHeader === -1) {
+    return { raw, lines, reorderables: [], pendingHeader: -1, processedHeader: -1 };
+  }
+
+  const pendingStart = pendingHeader + 1;
+  const pendingEnd = processedHeader === -1 ? lines.length : processedHeader;
+  const reorderables = [];
+
+  for (let i = pendingStart; i < pendingEnd; i++) {
+    const parsed = parsePendingLine(lines[i]);
+    if (!parsed) {
+      continue;
+    }
+    reorderables.push({ index: i, ...parsed, raw: lines[i] });
+  }
+
+  return { raw, lines, reorderables, pendingHeader, processedHeader };
+}
+
+function atomicWrite(path, content) {
+  const tmpPath = `${path}.tmp`;
+  writeFileSync(tmpPath, content, 'utf-8');
+  renameSync(tmpPath, path);
+}
+
+function main() {
+  const workflowCfg = safeYaml(workflowConfigPath);
+  const portals = safeYaml(portalsPath);
+  const profile = safeYaml(profilePath);
+  const cfg = mergeDeep(DEFAULT_CONFIG, workflowCfg);
+
+  const externalJobs = safeJson(externalJobsPath);
+  const externalByUrl = new Map();
+  for (const job of externalJobs) {
+    const url = String(job?.url || '').trim();
+    if (!url || externalByUrl.has(url)) continue;
+    externalByUrl.set(url, job);
+  }
+
+  const pipeline = readPipeline();
+  if (pipeline.pendingHeader === -1) {
+    console.log('[rank] No "## Pendientes" section found. Skipping ranking.');
+    return;
+  }
+  if (pipeline.reorderables.length === 0) {
+    console.log('[rank] No reorderable pending entries found. Skipping ranking.');
+    return;
+  }
+
+  const scored = pipeline.reorderables.map(item => {
+    const external = externalByUrl.get(item.url);
+    const rank = scoreJob(item, external, cfg, portals, profile);
+    return {
+      ...item,
+      ...rank,
+      source: external?.source || '',
+      location: external?.location || '',
+      posted_at: external?.posted_at || '',
+    };
+  });
+
+  scored.sort((a, b) => {
+    if (b.rough_score !== a.rough_score) return b.rough_score - a.rough_score;
+    if (a.fit_tier !== b.fit_tier) return a.fit_tier.localeCompare(b.fit_tier);
+    return a.title.localeCompare(b.title);
+  });
+
+  const newLines = [...pipeline.lines];
+  for (let i = 0; i < pipeline.reorderables.length; i++) {
+    const targetIndex = pipeline.reorderables[i].index;
+    const ranked = scored[i];
+    newLines[targetIndex] = `- [ ] ${ranked.url} | ${ranked.company} | ${ranked.title}`;
+  }
+
+  const rankingPayload = {
+    generated_at: new Date().toISOString(),
+    queue_size: scored.length,
+    items: scored.map(item => ({
+      url: item.url,
+      company: item.company,
+      title: item.title,
+      rough_score: item.rough_score,
+      fit_tier: item.fit_tier,
+      role_family: item.role_family,
+      reason_codes: item.reason_codes,
+      source: item.source,
+      location: item.location,
+      posted_at: item.posted_at,
+    })),
+  };
+
+  const topBefore = pipeline.reorderables.slice(0, 10).map(j => `${j.company} | ${j.title}`);
+  const topAfter = scored.slice(0, 10).map(j => `${j.rough_score.toString().padStart(3, ' ')} ${j.fit_tier} | ${j.company} | ${j.title}`);
+  const tierCounts = scored.reduce((acc, item) => {
+    acc[item.fit_tier] = (acc[item.fit_tier] || 0) + 1;
+    return acc;
+  }, {});
+
+  console.log(`[rank] Pending entries analyzed: ${scored.length}`);
+  console.log(`[rank] Tier breakdown: ${Object.entries(tierCounts).map(([k, v]) => `${k}=${v}`).join(', ')}`);
+  console.log('[rank] Top before:');
+  for (const line of topBefore) console.log(`  - ${line}`);
+  console.log('[rank] Top after:');
+  for (const line of topAfter) console.log(`  - ${line}`);
+
+  if (dryRun) {
+    console.log('[rank] Dry run complete. No files written.');
+    return;
+  }
+
+  atomicWrite(pipelinePath, newLines.join('\n'));
+  atomicWrite(rankingOutputPath, JSON.stringify(rankingPayload, null, 2));
+  console.log(`[rank] Updated queue order in ${pipelinePath}`);
+  console.log(`[rank] Wrote ranking metadata to ${rankingOutputPath}`);
+}
+
+try {
+  main();
+} catch (error) {
+  console.error(`[rank] Failed: ${error.message}`);
+  process.exit(1);
+}

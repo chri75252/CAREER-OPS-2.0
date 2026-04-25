@@ -1,0 +1,56 @@
+candidate:
+  full_name: "Christian Haddad"
+  email: "Christianhaddadpro1@gmail.com"
+  phone: "+971 56 446 1133"
+  location: "Abu Dhabi, UAE"
+  linkedin: ""
+  portfolio_url: ""
+  github: ""
+  twitter: ""
+
+target_roles:
+  primary:
+    - "Applied AI Engineer"
+    - "Forward Deployed Engineer"
+    - "Solutions Architect"
+    - "Solutions Engineer"
+  archetypes:
+    - name: "AI / Automation Engineer"
+      level: "Mid-Senior"
+      fit: "primary"
+    - name: "Forward Deployed Engineer"
+      level: "Mid-Senior"
+      fit: "primary"
+    - name: "Solutions Architect"
+      level: "Mid-Senior"
+      fit: "primary"
+    - name: "Solutions Engineer"
+      level: "Mid-Senior"
+      fit: "secondary"
+
+narrative:
+  headline: "Engineer and operator building AI-assisted automation systems and cross-functional delivery workflows"
+  exit_story: "Mechanical engineer turned project operator and business builder, with hands-on experience structuring automation workflows, sourcing pipelines, and AI-assisted operational systems."
+  superpowers:
+    - "Complex project coordination across technical and commercial stakeholders"
+    - "Building practical automation workflows for sourcing, analysis, and decision support"
+    - "Client-facing communication, negotiation, and execution under deadline pressure"
+  proof_points:
+    - name: "Career Ops 2.0 pipeline orchestration"
+      url: ""
+      hero_metric: "Built a multi-source job discovery and handoff workflow integrating ATS scanning, feeds, deduplication, and queue import"
+    - name: "Amazon private label operations"
+      url: ""
+      hero_metric: "Used research tools, pricing models, and supplier negotiation workflows to evaluate products and margins"
+
+compensation:
+  target_range: ""
+  currency: "USD"
+  minimum: ""
+  location_flexibility: "Remote-first; UAE-based roles are also acceptable"
+
+location:
+  country: "United Arab Emirates"
+  city: "Abu Dhabi"
+  timezone: "Gulf Standard Time"
+  visa_status: "Canadian citizen"

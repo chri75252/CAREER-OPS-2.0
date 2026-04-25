@@ -1,0 +1,63 @@
+# Example portals.yml — list companies to scan via ATS APIs
+# Each company needs a careers_url or ats_endpoint
+
+title_filter:
+  positive:
+    - "AI"
+    - "Applied AI"
+    - "Agent"
+    - "Automation"
+    - "AI Engineer"
+    - "Applied AI Engineer"
+    - "AI Systems Engineer"
+    - "Forward Deployed"
+    - "Forward Deployed Engineer"
+    - "Solutions Architect"
+    - "Solutions Engineer"
+    - "Conversational AI"
+    - "Voice AI"
+  negative:
+    - "Junior"
+    - "Intern"
+    - "Account Executive"
+    - "Account Manager"
+    - "Counsel"
+    - "Recruiter"
+    - "Marketing"
+    - "Sales"
+    - ".NET"
+    - "Android"
+    - "iOS"
+    - "PHP"
+    - "Ruby"
+
+tracked_companies:
+  - name: "Anthropic"
+    careers_url: "https://job-boards.greenhouse.io/anthropic"
+    api: "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs"
+    enabled: true
+
+  - name: "PolyAI"
+    careers_url: "https://job-boards.eu.greenhouse.io/polyai"
+    api: "https://boards-api.greenhouse.io/v1/boards/polyai/jobs"
+    enabled: true
+
+  - name: "Airtable"
+    careers_url: "https://job-boards.greenhouse.io/airtable"
+    api: "https://boards-api.greenhouse.io/v1/boards/airtable/jobs"
+    enabled: true
+
+  - name: "Vercel"
+    careers_url: "https://job-boards.greenhouse.io/vercel"
+    api: "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
+    enabled: true
+
+  - name: "Temporal"
+    careers_url: "https://job-boards.greenhouse.io/temporal"
+    api: "https://boards-api.greenhouse.io/v1/boards/temporal/jobs"
+    enabled: true
+
+  - name: "Arize AI"
+    careers_url: "https://job-boards.greenhouse.io/arizeai"
+    api: "https://boards-api.greenhouse.io/v1/boards/arizeai/jobs"
+    enabled: true

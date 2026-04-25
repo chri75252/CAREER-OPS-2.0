@@ -1,0 +1,684 @@
+{
+  "communities": {
+    "0": [
+      "pipeline",
+      "pipeline_newpipelinemodel",
+      "pipeline_statuslabel",
+      "pipeline_truncaterunes",
+      "screens_pipelineclosedmsg",
+      "screens_pipelineloadreportmsg",
+      "screens_pipelinemodel",
+      "screens_pipelinemodel_adjustscroll",
+      "screens_pipelinemodel_applyfilterandsort",
+      "screens_pipelinemodel_copyreportcache",
+      "screens_pipelinemodel_countbynormstatus",
+      "screens_pipelinemodel_countforfilter",
+      "screens_pipelinemodel_currentapp",
+      "screens_pipelinemodel_cursorlineestimate",
+      "screens_pipelinemodel_enrichreport",
+      "screens_pipelinemodel_handlekey",
+      "screens_pipelinemodel_handlestatuspicker",
+      "screens_pipelinemodel_height",
+      "screens_pipelinemodel_init",
+      "screens_pipelinemodel_loadcurrentreport",
+      "screens_pipelinemodel_overlaystatuspicker",
+      "screens_pipelinemodel_renderappline",
+      "screens_pipelinemodel_renderbody",
+      "screens_pipelinemodel_renderheader",
+      "screens_pipelinemodel_renderhelp",
+      "screens_pipelinemodel_rendermetrics",
+      "screens_pipelinemodel_renderpreview",
+      "screens_pipelinemodel_rendersortbar",
+      "screens_pipelinemodel_rendertabs",
+      "screens_pipelinemodel_resize",
+      "screens_pipelinemodel_scorestyle",
+      "screens_pipelinemodel_statuscolormap",
+      "screens_pipelinemodel_update",
+      "screens_pipelinemodel_view",
+      "screens_pipelinemodel_width",
+      "screens_pipelinemodel_withreloadeddata",
+      "screens_pipelineopenprogressmsg",
+      "screens_pipelineopenreportmsg",
+      "screens_pipelineopenurlmsg",
+      "screens_pipelinerefreshmsg",
+      "screens_pipelinetab",
+      "screens_pipelineupdatestatusmsg",
+      "screens_reportsummary"
+    ],
+    "1": [
+      "discovery",
+      "discovery_clampcursorbyurl",
+      "discovery_clampresultcursorbyurl",
+      "discovery_fallback",
+      "discovery_max",
+      "discovery_newdiscoverymodel",
+      "discovery_parsediscovery",
+      "discovery_parseexternaljobs",
+      "discovery_parsependingqueue",
+      "discovery_parsequeuerankings",
+      "model_discoverydata",
+      "model_externaljob",
+      "model_externaljob_unmarshaljson",
+      "model_pendingjob",
+      "model_queuerankingfile",
+      "model_queuerankingitem",
+      "screens_discoverymodel",
+      "screens_discoverymodel_activelen",
+      "screens_discoverymodel_adjustscroll",
+      "screens_discoverymodel_bodyheight",
+      "screens_discoverymodel_currentcursor",
+      "screens_discoverymodel_currenturl",
+      "screens_discoverymodel_height",
+      "screens_discoverymodel_init",
+      "screens_discoverymodel_movecursor",
+      "screens_discoverymodel_renderbody",
+      "screens_discoverymodel_renderfooter",
+      "screens_discoverymodel_renderheader",
+      "screens_discoverymodel_renderqueuebody",
+      "screens_discoverymodel_renderresultbody",
+      "screens_discoverymodel_rendertabs",
+      "screens_discoverymodel_resize",
+      "screens_discoverymodel_setcursor",
+      "screens_discoverymodel_update",
+      "screens_discoverymodel_view",
+      "screens_discoverymodel_width",
+      "screens_discoverymodel_withreloadeddata",
+      "screens_discoveryopenapplicationsmsg",
+      "screens_discoveryopenurlmsg",
+      "screens_discoverytab"
+    ],
+    "2": [
+      "article-digest_md",
+      "batch_batch-input_tsv",
+      "batch_batch-prompt",
+      "batch_batch-state_tsv",
+      "batch_readme",
+      "batch_tracker-additions",
+      "config_portals_yml",
+      "config_workflow_gates",
+      "cv_md",
+      "data_applications",
+      "data_pipeline",
+      "data_scan-history_tsv",
+      "interview-story_bank",
+      "modes__profile",
+      "modes__shared",
+      "modes_apply",
+      "modes_auto-pipeline",
+      "modes_batch",
+      "modes_contacto",
+      "modes_deep",
+      "modes_followup",
+      "modes_interview-prep",
+      "modes_oferta",
+      "modes_patterns",
+      "modes_pdf",
+      "modes_pipeline",
+      "modes_scan",
+      "modes_tracker",
+      "reports_deep",
+      "reports_evaluations",
+      "system_archetype",
+      "system_scoring",
+      "templates_cv-template_html",
+      "tool_analyze-patterns_mjs",
+      "tool_batch-runner_sh",
+      "tool_cv-sync-check_mjs",
+      "tool_followup-cadence_mjs",
+      "tool_generate-pdf_mjs",
+      "tool_merge-tracker_mjs",
+      "tool_verify-pipeline_mjs"
+    ],
+    "3": [
+      "config_profile_yml",
+      "data_applications_md",
+      "data_pipeline_md",
+      "modes_de_README",
+      "modes_de__shared",
+      "modes_de_angebot",
+      "modes_de_bewerben",
+      "modes_de_pipeline",
+      "modes_fr_README",
+      "modes_fr__shared",
+      "modes_fr_offre",
+      "modes_fr_pipeline",
+      "modes_fr_postuler",
+      "modes_ja_README",
+      "modes_ja__shared",
+      "modes_ja_kyujin",
+      "modes_ja_oubo",
+      "modes_ja_pipeline",
+      "modes_pt_README",
+      "modes_pt__shared",
+      "modes_pt_aplicar",
+      "modes_pt_oferta",
+      "modes_pt_pipeline",
+      "modes_ru_README",
+      "modes_ru__shared",
+      "modes_ru_apply",
+      "modes_ru_interview-prep",
+      "modes_ru_oferta",
+      "modes_ru_pipeline"
+    ],
+    "4": [
+      "discovery_test",
+      "discovery_test_testdiscoveryopenmessages",
+      "discovery_test_testdiscoveryviewrendersqueueandresults",
+      "discovery_test_testparsediscoveryallowspartialstate",
+      "discovery_test_testparsediscoveryreturnserrorwhenexternaljobscannotdecode",
+      "discovery_test_testparseexternaljobsacceptsnumericpostedat",
+      "discovery_test_testparseexternaljobsparsesjson",
+      "discovery_test_testparsependingqueueparseschecklistrows",
+      "help_test",
+      "help_test_testhelpviewusesopencodefirstwording",
+      "main_test",
+      "main_test_buildtestmodel",
+      "main_test_testkeyfiveopenstrackprogress",
+      "main_test_testprimarysectionkeysandhelprouting",
+      "main_test_testworkflowkeysopendedicatedstatusscreens",
+      "pipeline_test",
+      "pipeline_test_testrenderapplineincludesdatecolumn",
+      "pipeline_test_testwithreloadeddatapreservesstateandselection",
+      "theme",
+      "theme_newtheme",
+      "theme_theme",
+      "workflow_status_test",
+      "workflow_status_test_testloadworkflowsectionstatusapply",
+      "workflow_status_test_testloadworkflowsectionstatusbatch",
+      "workflow_status_test_testloadworkflowsectionstatuspdf",
+      "workflow_status_test_testworkflowstatusscreenrenderscorefields"
+    ],
+    "5": [
+      "build_spec",
+      "career_ops_agents",
+      "career_ops_article_digest",
+      "career_ops_cheat_sheet",
+      "career_ops_claude",
+      "career_ops_code_of_conduct",
+      "career_ops_concise_guide",
+      "career_ops_contributing",
+      "career_ops_cv",
+      "career_ops_data_contract",
+      "career_ops_governance",
+      "career_ops_legal",
+      "career_ops_workflow_playbook",
+      "claude_shim",
+      "implementation",
+      "implementation_plan",
+      "job_seeking_chats",
+      "reviewed_plan",
+      "rt_candidate_config",
+      "rt_docs_clarification",
+      "rt_workflow_redesign",
+      "rt_workflow_redesign_plan",
+      "test_run_workflow",
+      "workflow_redesign_report"
+    ],
+    "6": [
+      "career",
+      "career_cleantablecell",
+      "career_computemetrics",
+      "career_computeprogressmetrics",
+      "career_enrichappurlsbycompany",
+      "career_enrichfromscanhistory",
+      "career_loadbatchinputurls",
+      "career_loadjoburls",
+      "career_loadreportsummary",
+      "career_normalizecompany",
+      "career_normalizestatus",
+      "career_parseapplications",
+      "career_replacestatusinline",
+      "career_safepct",
+      "career_statuspriority",
+      "career_updateapplicationstatus",
+      "data_batchentry",
+      "model_careerapplication",
+      "model_funnelstage",
+      "model_pipelinemetrics",
+      "model_progressmetrics",
+      "model_scorebucket",
+      "model_weekactivity"
+    ],
+    "7": [
+      "screens_viewerclosedmsg",
+      "screens_viewermodel",
+      "screens_viewermodel_bodyheight",
+      "screens_viewermodel_init",
+      "screens_viewermodel_renderbody",
+      "screens_viewermodel_renderfooter",
+      "screens_viewermodel_renderheader",
+      "screens_viewermodel_renderinlinebold",
+      "screens_viewermodel_rendertableblock",
+      "screens_viewermodel_resize",
+      "screens_viewermodel_styleline",
+      "screens_viewermodel_update",
+      "screens_viewermodel_view",
+      "viewer",
+      "viewer_computecolumnwidths",
+      "viewer_istableline",
+      "viewer_istableseparator",
+      "viewer_newviewermodel",
+      "viewer_parsetablecells"
+    ],
+    "8": [
+      "fetcher",
+      "fetcher_fetch_all",
+      "fetcher_fetch_arbeitnow",
+      "fetcher_fetch_jobicy",
+      "fetcher_fetch_python_jobs",
+      "fetcher_fetch_remoteok",
+      "fetcher_fetch_remotive",
+      "fetcher_fetch_weworkremotely",
+      "fetcher_job_key",
+      "fetcher_rationale_112",
+      "fetcher_rationale_146",
+      "fetcher_rationale_175",
+      "fetcher_rationale_19",
+      "fetcher_rationale_207",
+      "fetcher_rationale_214",
+      "fetcher_rationale_51",
+      "fetcher_rationale_81"
+    ],
+    "9": [
+      "screens_workflowstatusclosedmsg",
+      "screens_workflowstatusrefreshmsg",
+      "workflow_status",
+      "workflow_status_countchecklistrows",
+      "workflow_status_counttsvrows",
+      "workflow_status_latestfileinfo",
+      "workflow_status_loadapplystatus",
+      "workflow_status_loadbatchstatus",
+      "workflow_status_loaddeepstatus",
+      "workflow_status_loadpdfstatus",
+      "workflow_status_loadworkflowsectionstatus",
+      "workflow_status_newworkflowstatusmodel",
+      "workflow_status_parsebatchstate",
+      "workflow_status_recentapplicationnames",
+      "workflow_status_recentbasenames"
+    ],
+    "10": [
+      "progress",
+      "progress_newprogressmodel",
+      "screens_progressclosedmsg",
+      "screens_progressmodel",
+      "screens_progressmodel_init",
+      "screens_progressmodel_ratecolor",
+      "screens_progressmodel_renderfunnel",
+      "screens_progressmodel_renderheader",
+      "screens_progressmodel_renderhelp",
+      "screens_progressmodel_renderrates",
+      "screens_progressmodel_renderscoredistribution",
+      "screens_progressmodel_renderweeklyactivity",
+      "screens_progressmodel_resize",
+      "screens_progressmodel_update",
+      "screens_progressmodel_view"
+    ],
+    "11": [
+      "ashby",
+      "ats-pdf-generation",
+      "career-ops",
+      "cv-christian-haddad-datadog-20260421",
+      "dashboard-tui",
+      "demo-gif",
+      "greenhouse",
+      "hero-banner",
+      "lever",
+      "multi-agent-job-search",
+      "offer-evaluation",
+      "og-image",
+      "portal-scanner",
+      "roadmap-phases",
+      "vision-banner"
+    ],
+    "12": [
+      "dashboard_appmodel",
+      "dashboard_appmodel_activeworkflowkey",
+      "dashboard_appmodel_init",
+      "dashboard_appmodel_openworkflowsection",
+      "dashboard_appmodel_reloaddiscoverydata",
+      "dashboard_appmodel_reloadpipelinedata",
+      "dashboard_appmodel_update",
+      "dashboard_appmodel_view",
+      "dashboard_viewstate",
+      "dashboard_wfitem",
+      "main",
+      "main_main",
+      "main_renderworkflowbar",
+      "main_renderworkflowshell"
+    ],
+    "13": [
+      "help",
+      "help_capabilitybadge",
+      "help_newhelpmodel",
+      "help_renderhelpshell",
+      "help_trunc",
+      "screens_helpclosedmsg",
+      "screens_helpmodel",
+      "screens_helpmodel_init",
+      "screens_helpmodel_renderbody",
+      "screens_helpmodel_resize",
+      "screens_helpmodel_update",
+      "screens_helpmodel_view"
+    ],
+    "14": [
+      "archetype_detection",
+      "candidate_profile",
+      "dashboard_tui",
+      "datadog_staff_ai_engineer_eval",
+      "implementation_manager",
+      "pipeline_integrity",
+      "scripts_reference",
+      "six_block_evaluation",
+      "solutions_engineer",
+      "star_reflection",
+      "system_architecture",
+      "tam"
+    ],
+    "15": [
+      "screens_workflowstatusmodel",
+      "screens_workflowstatusmodel_init",
+      "screens_workflowstatusmodel_renderfooter",
+      "screens_workflowstatusmodel_renderheader",
+      "screens_workflowstatusmodel_renderitems",
+      "screens_workflowstatusmodel_rendernotes",
+      "screens_workflowstatusmodel_rendersummary",
+      "screens_workflowstatusmodel_resize",
+      "screens_workflowstatusmodel_update",
+      "screens_workflowstatusmodel_view",
+      "screens_workflowstatusmodel_withreloadedstatus"
+    ],
+    "16": [
+      "run_pipeline",
+      "run_pipeline_load_pipeline_config",
+      "run_pipeline_log",
+      "run_pipeline_run_jobspy_py",
+      "run_pipeline_run_node",
+      "run_pipeline_run_npm",
+      "run_pipeline_run_pipeline",
+      "run_pipeline_run_py",
+      "run_pipeline_step",
+      "run_pipeline_write_stderr",
+      "run_pipeline_write_stdout"
+    ],
+    "17": [
+      "model_workflowcapability",
+      "model_workflowsection",
+      "model_workflowsectionstatus",
+      "model_workflowstatusitem",
+      "workflow_section",
+      "workflow_section_workflowsectionbykey",
+      "workflow_section_workflowsections"
+    ],
+    "18": [
+      "scrape",
+      "scrape_job_key",
+      "scrape_main",
+      "scrape_normalize_job",
+      "scrape_output_path",
+      "scrape_scrape_for_keyword",
+      "scrape_write_jobs"
+    ],
+    "19": [
+      "merger",
+      "merger_dedupe",
+      "merger_job_key",
+      "merger_load_json",
+      "merger_merge_sources"
+    ],
+    "20": [
+      "workflow_cheat_sheet",
+      "workflow_forensic",
+      "workflow_redesign"
+    ],
+    "21": [
+      "tmp_parse_discovery",
+      "tmp_parse_discovery_main"
+    ],
+    "22": [
+      "catppuccin",
+      "catppuccin_newcatppuccinmocha"
+    ],
+    "23": [
+      "catppuccin_latte",
+      "catppuccin_latte_newcatppuccinlatte"
+    ],
+    "24": [
+      "ingest_to_career_ops",
+      "ingest_to_career_ops_main"
+    ],
+    "25": [
+      "dashboard_root_cause_report",
+      "dashboard_truth_test_report"
+    ],
+    "26": [
+      "polyai_agent_design_manager_eval",
+      "polyai_agent_designer_eval"
+    ],
+    "27": [
+      "polyai_account_manager_eval",
+      "polyai_channel_am_eval"
+    ],
+    "28": [
+      "customization_guide",
+      "setup_guide"
+    ],
+    "29": [
+      "greenhouse_ats",
+      "test_run_report"
+    ],
+    "30": [
+      "analyze_pipeline"
+    ],
+    "31": [
+      "graphify_run"
+    ],
+    "32": [
+      "tmp_probe"
+    ],
+    "33": [
+      "career_ops_changelog"
+    ],
+    "34": [
+      "modes_ofertas"
+    ],
+    "35": [
+      "modes_project"
+    ],
+    "36": [
+      "modes_training"
+    ],
+    "37": [
+      "modes__profile_template"
+    ],
+    "38": [
+      "polyai_director_compliance_eval"
+    ]
+  },
+  "cohesion": {
+    "0": 0.09,
+    "1": 0.09,
+    "2": 0.07,
+    "3": 0.19,
+    "4": 0.09,
+    "5": 0.11,
+    "6": 0.13,
+    "7": 0.2,
+    "8": 0.17,
+    "9": 0.25,
+    "10": 0.2,
+    "11": 0.13,
+    "12": 0.21,
+    "13": 0.23,
+    "14": 0.17,
+    "15": 0.27,
+    "16": 0.4,
+    "17": 0.29,
+    "18": 0.57,
+    "19": 0.7,
+    "20": 0.67,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0
+  },
+  "gods": [
+    {
+      "id": "screens_pipelinemodel",
+      "label": "PipelineModel",
+      "edges": 30
+    },
+    {
+      "id": "screens_discoverymodel",
+      "label": "DiscoveryModel",
+      "edges": 21
+    },
+    {
+      "id": "config_profile_yml",
+      "label": "profile.yml (User Identity)",
+      "edges": 14
+    },
+    {
+      "id": "screens_progressmodel",
+      "label": "ProgressModel",
+      "edges": 12
+    },
+    {
+      "id": "screens_viewermodel",
+      "label": "ViewerModel",
+      "edges": 12
+    },
+    {
+      "id": "screens_workflowstatusmodel",
+      "label": "WorkflowStatusModel",
+      "edges": 11
+    },
+    {
+      "id": "data_applications_md",
+      "label": "Application Tracker",
+      "edges": 11
+    },
+    {
+      "id": "career-ops",
+      "label": "Career-Ops System",
+      "edges": 11
+    },
+    {
+      "id": "fetcher_fetch_all",
+      "label": "fetch_all()",
+      "edges": 9
+    },
+    {
+      "id": "modes_de__shared",
+      "label": "German Geteilter Kontext",
+      "edges": 9
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Christian Haddad CV - Datadog Application",
+      "target": "Career-Ops System",
+      "source_files": [
+        "career-ops/output/cv-christian-haddad-datadog-20260421.pdf",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "referenced_by",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (paper \u2194 doc); connects across different repos/directories; peripheral node `Christian Haddad CV - Datadog Application` unexpectedly reaches hub `Career-Ops System`"
+    },
+    {
+      "source": "Career-Ops Roadmap Phases",
+      "target": "Career-Ops System",
+      "source_files": [
+        "career-ops/docs/roadmap-phases.jpg",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (image \u2194 doc); connects across different repos/directories; peripheral node `Career-Ops Roadmap Phases` unexpectedly reaches hub `Career-Ops System`"
+    },
+    {
+      "source": "Career-Ops Hero Banner",
+      "target": "Career-Ops System",
+      "source_files": [
+        "career-ops/docs/hero-banner.jpg",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "conceptually_related_to",
+      "why": "crosses file types (image \u2194 doc); connects across different repos/directories; peripheral node `Career-Ops Hero Banner` unexpectedly reaches hub `Career-Ops System`"
+    },
+    {
+      "source": "Career-Ops OG Image",
+      "target": "Career-Ops System",
+      "source_files": [
+        "career-ops/docs/og-image.jpg",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "conceptually_related_to",
+      "why": "crosses file types (image \u2194 doc); connects across different repos/directories; peripheral node `Career-Ops OG Image` unexpectedly reaches hub `Career-Ops System`"
+    },
+    {
+      "source": "Career-Ops Vision Banner",
+      "target": "Career-Ops System",
+      "source_files": [
+        "career-ops/docs/vision-banner.jpg",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "conceptually_related_to",
+      "why": "crosses file types (image \u2194 doc); connects across different repos/directories; peripheral node `Career-Ops Vision Banner` unexpectedly reaches hub `Career-Ops System`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `viewState`, `wfItem`, `batchEntry` to the rest of the system?",
+      "why": "95 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Pipeline UI Models` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Discovery Data Models` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Career-Ops Modes & Data` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Dashboard Tests` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Project Documentation` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Career Data Processing` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

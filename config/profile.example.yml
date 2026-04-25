@@ -1,0 +1,35 @@
+# Example profile.yml for career-ops
+# Customize with your own details
+
+name: "Your Name"
+email: "your.email@example.com"
+phone: "+1-555-000-0000"
+location: "Remote"
+title: "Software Engineer"
+
+summary: |
+  Experienced engineer with a background in Python, backend systems,
+  and data-intensive applications. Looking for remote or UAE-based roles.
+
+experience:
+  - years: 5
+    role: "Software Engineer"
+    company: "Previous Company"
+
+education:
+  - degree: "Bachelor's"
+    field: "Computer Science"
+    university: "Your University"
+
+skills:
+  - Python
+  - JavaScript
+  - SQL
+  - Git
+  - AWS
+  - Docker
+
+languages:
+  - English
+  - Arabic
+  - French

@@ -1,0 +1,3602 @@
+[
+  {
+    "title": "Test Automation Engineer",
+    "company": "540",
+    "url": "https://remoteOK.com/remote-jobs/remote-test-automation-engineer-540-1131147",
+    "location": "Remote",
+    "source": "remoteok",
+    "posted_at": "",
+    "tags": [
+      "test",
+      "design",
+      "system",
+      "support",
+      "testing",
+      "api",
+      "engineer",
+      "engineering",
+      "full-time",
+      "digital nomad"
+    ],
+    "description": "540 is seeking a Test Automation Engineer to support the DoW in building a next-generation Air Force aircraft maintenance application powered by Angular, Apigee, Kubernetes, and Google Cloud. Test Engineers on this team design and implement automated tests to ensure the platform performs reliably as it supports Air Force maintenance operations. You'll work closely with engineers, architects, and product stakeholders to validate system integrations, improve test coverage, and ensure the platform operates reliably across distributed systems and services.\n\nThis role is offered as a contract engagement and is ideal for engineers who value flexibility, autonomy, and high-impact work. While there may be an opportunity to convert to full-time in the future, conversion is not guaranteed and is dependent on program needs.\n\n<strong>Location</strong>: Remote within the continental United States, East Coast working hours<br><strong>Citizenship &amp; Clearance Requirement</strong>: per client requirements, candidates must be a U.S. Citizen with the ability to obtain a DoD Secret clearance<br><strong>Education Requirement: </strong>Bachelor's Degree in Computer Science or related engineering field (preferred)<br><strong>Contract Duration: </strong>initial 12 month contract, 40 hours per week\n\n<strong>WHY 540?</strong>\n\n540 is a forward-thinking company that the government turns to in order to #getshitdone. We don't just talk about innovation â we deliver it. We break down barriers, build impactful technology, and solve mission-critical problems.\n\n<strong>HOW YOU'LL DRIVE IMPACT</strong>\n<ul>\n<li>Own and manage development-level testing process and outcomes across the platform</li>\n<li>Design, develop, and maintain automated tests to validate functionality across APIs, microservices, and user interfaces</li>\n<li>Develop and execute integration, functional, and regression tests for distributed systems&nbsp;</li>\n<li>Build and maintain automated API tests f<br/><br/>Please mention the word **FLAWLESS** and tag RMmEwMDpmMjk6MmM4OjMyYzM6NDIwYzo4MWRhOjY5N2M6Mw== when applying to show you read the job post completely (#RMmEwMDpmMjk6MmM4OjMyYzM6NDIwYzo4MWRhOjY5N2M6Mw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human."
+  },
+  {
+    "title": "Senior Solutions Architect",
+    "company": "540",
+    "url": "https://remoteOK.com/remote-jobs/remote-senior-solutions-architect-540-1131145",
+    "location": "Remote",
+    "source": "remoteok",
+    "posted_at": "",
+    "tags": [
+      "architect",
+      "design",
+      "system",
+      "technical",
+      "support",
+      "cloud",
+      "lead",
+      "senior",
+      "operations",
+      "reliability",
+      "engineering",
+      "digital nomad"
+    ],
+    "description": "540 is seeking a Senior Solutions Architect to support our partnership with Google and the DoW in building new capabilities for an Air Force integration platform. This platform leverages Google Cloud, Apigee, and Kubernetes to enable scalable, secure, and mission-critical systems. \n\nIn this role, you will lead technical architecture efforts and drive the design and delivery of complex, distributed systems. A key focus of this work is enabling disconnected operations (offline-first) capabilities that ensure platform reliability and continuity in degraded or low-connectivity environments supporting Air Force operations.\n\n<strong>Location</strong>: Remote within the continental United States<br><strong>Citizenship &amp; Clearance Requirement</strong>: per client requirements, candidates must be a U.S. Citizen with the ability to obtain a DoD Secret clearance<br><strong>Education Requirement: </strong>Bachelorâs Degree in Computer Science or related engineering field (preferred)<br><strong>540 Internal Thrive Level: </strong>Senior Solutions Architect\n\n<strong>WHY 540?</strong>\n\n540 is a forward-thinking company that the government turns to in order to #getshitdone. We donât just talk about innovation â we deliver it. We break down barriers, build impactful technology, and solve mission-critical problems.\n\n<strong>HOW YOUâLL DRIVE IMPACT</strong>\n<ul>\n<li>Lead the architecture and delivery of an Air Force integration platform built on Google Cloud, Apigee, and Kubernetes</li>\n<li>Design and guide implementation of scalable, secure, and maintainable cloud architectures</li>\n<li>Partner with engineers, architects, and product stakeholders to translate mission needs into technical solutions and platform capabilities</li>\n<li>Support engineering teams in designing, building, and troubleshooting distributed systems and cloud-native applications</li>\n<li>Drive architectural decisions across cloud, networking, system design, and service integrations, and define conflict reso<br/><br/>Please mention the word **HARDIER** and tag RMmEwMDpmMjk6MmM4OjMyYzM6NDIwYzo4MWRhOjY5N2M6Mw== when applying to show you read the job post completely (#RMmEwMDpmMjk6MmM4OjMyYzM6NDIwYzo4MWRhOjY5N2M6Mw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human."
+  },
+  {
+    "title": "Senior Software Engineer II Applied AI and Evaluations",
+    "company": "Smartsheet",
+    "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-ii-applied-ai-and-evaluations-smartsheet-1131095",
+    "location": "Remote",
+    "source": "remoteok",
+    "posted_at": "",
+    "tags": [
+      "software",
+      "design",
+      "embedded",
+      "qa",
+      "management",
+      "senior",
+      "engineer",
+      "engineering",
+      "digital nomad"
+    ],
+    "description": "For over 20 years, Smartsheet has helped people and teams achieveâwell, anything. From seamless work management to smart, scalable solutions, we've always worked with flow. We're building tools that empower teams to automate the manual, uncover insights, and scale smarter. But more than that, we're creating spaceâ space to think big, take action, and unlock the kind of work that truly matters. Because when challenge meets purpose, and passion turns into progress, that's magic at work, and it's what we show up for everyday.\n\nSmartsheet is building the next generation of AI-powered work management through SmartAssist, our intelligent agent platform. As we scale from early demos to production-grade agents, quality is the critical frontier and we are looking for a Agent Quality Engineer to own it.\n\nThis is not a QA role. It's a deeply technical, high-autonomy position at the intersection of LLM evaluation, prompt and context engineering, and retrieval-augmented generation. You will diagnose why our agents fail, design the systems that catch regressions, and drive measurable improvements across our orchestrator and subagent fleet.\n\nYou will work closely with our Agent Engineering and AI Platform teams, embedded in a team that has already shipped evaluation infrastructure on Databricks/MLflow and is building toward a mature Agent Development Lifecycle (ADLC).\n\nYou Will:\n- Own agent quality end-to-end: diagnosis, improvement, and validation across SmartAssist's orchestrator and subagents\n- Identify failure modes across quality dimensions factual accuracy, completeness, tone, actionability, and latency and prioritize what to fix\n- Drive quality improvements through prompt engineering,<br/><br/>Please mention the word **FRESHER** and tag RMmEwMDpmMjk6MmM4OjMyYzM6NDIwYzo4MWRhOjY5N2M6Mw== when applying to show you read the job post completely (#RMmEwMDpmMjk6MmM4OjMyYzM6NDIwYzo4MWRhOjY5N2M6Mw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human."
+  },
+  {
+    "title": "Senior Independent AI Engineer / Architect",
+    "company": "A.Team",
+    "url": "https://remotive.com/remote-jobs/software-development/senior-independent-ai-engineer-architect-1919266",
+    "location": "Americas, Europe, Israel",
+    "source": "remotive",
+    "posted_at": "2026-04-16T10:16:01",
+    "tags": [
+      "go",
+      "UI/UX",
+      "wordpress",
+      "chat",
+      "apple",
+      "testing",
+      "catalyst"
+    ],
+    "description": "<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\" style=\"border-color: oklch(0.3039 0.04 213.68 / 0.16); scrollbar-color: initial; scrollbar-width: initial; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb("
+  },
+  {
+    "title": "Senior Full-stack React Developer",
+    "company": "Lemon.io",
+    "url": "https://remotive.com/remote-jobs/software-development/senior-full-stack-react-developer-2088711",
+    "location": "Americas, Europe, Asia, Oceania",
+    "source": "remotive",
+    "posted_at": "2026-04-15T14:19:37",
+    "tags": [
+      ".Net",
+      "android",
+      "AWS",
+      "azure",
+      "backend",
+      "C",
+      "C#",
+      "C++",
+      "data science",
+      "fullstack",
+      "golang",
+      "ios",
+      "java",
+      "javascript",
+      "node.js",
+      "php",
+      "python",
+      "react",
+      "react js",
+      "ruby/rails",
+      "shopify",
+      "video",
+      "blockchain",
+      "AI/ML",
+      "react native",
+      "rust",
+      "unity",
+      "spring",
+      "data analysis",
+      "laravel",
+      "solidity",
+      "flask",
+      "Typescript ",
+      "angular ",
+      "GCP",
+      "data engineering",
+      "Symfony",
+      "startup",
+      "marketplace",
+      "next.js"
+    ],
+    "description": "<p>Are you a talented Senior Developer looking for a remote job that lets you show your skills and get decent compensation? Look no further than <a href=\"https://lemon.io/for-developers/?utm_source=remotive&amp;utm_medium=job_ad&amp;utm_campaign=supply_en_react_python/golang_apr_2026_job_ad\" rel=\"nofollow\" target=\"_self\">Lemon.io</a> — the marketplace that connects you with hand-picked startups in the US and Europe.</p>\n<p><strong> </strong></p>\n<p><strong>What we offer:</strong></p>\n<ul style=\""
+  },
+  {
+    "title": "Senior Solutions Architect",
+    "company": "Automat-it",
+    "url": "https://www.arbeitnow.com/jobs/companies/automat-it/remote-senior-solutions-architect-berlin-33490",
+    "location": "Remote",
+    "source": "arbeitnow",
+    "posted_at": 1776469331,
+    "tags": [
+      "Remote"
+    ],
+    "description": "<p>Automat-it is an all-in AWS Premier Partner and Managed Services Provider specializing in the startup ecosystem. With over 800 customers and 500+ AWS certifications, Automat-it brings hands-on expertise in AI, DevOps, and FinOps to empower fast-paced startups to grow, deliver &amp; win. Our customers save significant time-to-market and optimize their cloud performance and costs.</p><p>We work across EMEA and the US, fueling innovation and solving complex challenges daily. Join us to grow your"
+  },
+  {
+    "title": "AI Engineer (f/m/d)",
+    "company": "Apaleo",
+    "url": "https://www.arbeitnow.com/jobs/companies/apaleo/ai-engineer-munich-273844",
+    "location": "Remote",
+    "source": "arbeitnow",
+    "posted_at": 1776458720,
+    "tags": [],
+    "description": "<h1>Join Apaleo and Shape the Future of Hospitality Tech!</h1>\n<p>Apaleo is the world's most open, API-first property management platform powering the next generation of hospitality operations. Its modular, AI-powered infrastructure enables hoteliers to customise their tech stack, automate routine work, and deliver seamless, personalised guest experiences, powered by best-in-class apps and autonomous AI agents that adapt to every stay.</p>\n<p>We are seeking <strong>AI Engineer's (f/m/d)</strong>"
+  },
+  {
+    "title": "(Senior) Solution Manager - Contact Center & Conversational AI (w/m/d)",
+    "company": "tecRacer Germany GmbH",
+    "url": "https://www.arbeitnow.com/jobs/companies/tecracer-germany-gmbh/senior-solution-manager-contact-center-conversational-ai-hanover-235372",
+    "location": "Remote",
+    "source": "arbeitnow",
+    "posted_at": 1776439873,
+    "tags": [
+      "Remote",
+      "Business Consulting"
+    ],
+    "description": "<h2>Jobbeschreibung</h2>\n<h2>Das sind wir</h2>\n<p>tecRacer ist einer der führenden AWS Premier Consulting Partner in Deutschland. Seit über 20 Jahren begleiten wir Unternehmen bei ihrer Cloud-Transformation – mit echtem Tiefgang, direktem AWS-Zugang und einem Team, das Cloud nicht nur versteht, sondern lebt.</p>\n<p>Wir sind kein Konzern, aber auch kein Startup: Wir sind ein erfahrenes, bodenständiges Unternehmen mit kurzen Entscheidungswegen und einer Unternehmenskultur, in der Eigenverantwortun"
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Reddit, Inc.",
+    "url": "https://www.linkedin.com/jobs/view/4282877162",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Developer (Freelance)",
+    "company": "Mindrift",
+    "url": "https://www.linkedin.com/jobs/view/4403402147",
+    "location": "Birmingham, England, UK",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Great Value Hiring",
+    "url": "https://www.linkedin.com/jobs/view/4378454290",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Developer (Freelance)",
+    "company": "Mindrift",
+    "url": "https://www.linkedin.com/jobs/view/4403407141",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Great Value Hiring",
+    "url": "https://www.linkedin.com/jobs/view/4377391098",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Liftoff Mobile",
+    "url": "https://www.linkedin.com/jobs/view/4378525250",
+    "location": "California, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer (Remote)",
+    "company": "StackAdapt",
+    "url": "https://www.linkedin.com/jobs/view/4389594573",
+    "location": "Greater Toronto Area, Canada",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Shipt",
+    "url": "https://www.linkedin.com/jobs/view/4402000096",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Scientist - AI/ML | Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400747833",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer I, AI",
+    "company": "AARP",
+    "url": "https://www.linkedin.com/jobs/view/4399787145",
+    "location": "Washington, DC",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "RAZOR",
+    "url": "https://www.linkedin.com/jobs/view/4400771941",
+    "location": "Reston, VA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400033522",
+    "location": "Alexandria, VA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Scientist - AI/ML | Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400764167",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400031566",
+    "location": "Austin, CO",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Scientist",
+    "company": "Hermes Corporate",
+    "url": "https://www.linkedin.com/jobs/view/4401720544",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Scientist - AI/ML | Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400759281",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Scientist - AI/ML | Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400753386",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400035485",
+    "location": "Riyadh, Riyadh, Saudi Arabia",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400044435",
+    "location": "Texas, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "[Dados] Cientista de Dados Especialista - Inteligência Artificial LLM | (Remoto)",
+    "company": "TOTVS",
+    "url": "https://www.linkedin.com/jobs/view/4399787036",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer ($140K – $210K + Equity) at Ambrook",
+    "company": "Jack & Jill",
+    "url": "https://www.linkedin.com/jobs/view/4401569726",
+    "location": "San Francisco, CA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400035471",
+    "location": "Toronto, Ontario, Canada",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400040427",
+    "location": "Melbourne, Victoria, Australia",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400036526",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Scientist",
+    "company": "AmeriLife",
+    "url": "https://www.linkedin.com/jobs/view/4401108286",
+    "location": "Clearwater, FL",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Roper Technologies, Inc.",
+    "url": "https://www.linkedin.com/jobs/view/4401398242",
+    "location": "Sarasota, FL",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Developer –Agents",
+    "company": "Hach",
+    "url": "https://www.linkedin.com/jobs/view/4401070277",
+    "location": "Bengaluru, Karnataka, India",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Developer –Agents",
+    "company": "Hach",
+    "url": "https://www.linkedin.com/jobs/view/4401066388",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399622898",
+    "location": "Phoenix, AZ",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399612964",
+    "location": "Boston, MA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399620919",
+    "location": "Gurgaon, Haryana, India",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399632059",
+    "location": "Pune Division, Maharashtra, India",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399624880",
+    "location": "Dallas, TX",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399626841",
+    "location": "New York, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399610967",
+    "location": "Atlanta, GA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399620922",
+    "location": "North Carolina, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399632058",
+    "location": "Delhi, Delhi, India",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399624866",
+    "location": "San Antonio, TX",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399623862",
+    "location": "Atlanta, GA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399623863",
+    "location": "Washington, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399614945",
+    "location": "Delhi, Delhi, India",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399627823",
+    "location": "Lyon, Auvergne-Rhône-Alpes, France",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399613935",
+    "location": "Cairo, Cairo, Egypt",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399611998",
+    "location": "North Carolina, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Software Engineer",
+    "company": "Agility Partners",
+    "url": "https://www.linkedin.com/jobs/view/4401356341",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399624879",
+    "location": "Munich, Bavaria, Germany",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399615941",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399631533",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "ML Engineer, RL & Autonomous Discovery",
+    "company": "Terray Therapeutics",
+    "url": "https://www.linkedin.com/jobs/view/4404008063",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "nan",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Corsearch",
+    "url": "https://www.linkedin.com/jobs/view/4403318845",
+    "location": "Munich, Bavaria, Germany",
+    "source": "jobspy:linkedin",
+    "posted_at": "nan",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "【年収1200万円 Global Team】Tech Architect / Full Remote (SaaS / B2B Platform)",
+    "company": "GAIDOOR RECRUIT",
+    "url": "https://www.linkedin.com/jobs/view/4401751650",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Cloud Architect (Remote)",
+    "company": "Joveo Ai",
+    "url": "https://www.linkedin.com/jobs/view/4403432793",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Lead Solutions Architect - VIP Services - Remote",
+    "company": "Keywords Studios",
+    "url": "https://www.linkedin.com/jobs/view/4403442749",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Lead Solutions Architect - VIP Services - Remote",
+    "company": "Keywords Studios",
+    "url": "https://www.linkedin.com/jobs/view/4403433937",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Cloud Architect",
+    "company": "Franklin Fitch",
+    "url": "https://www.linkedin.com/jobs/view/4403409321",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Lead Solutions Architect - VIP Services - Remote",
+    "company": "Keywords Studios",
+    "url": "https://www.linkedin.com/jobs/view/4403431997",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect- Application and Integration",
+    "company": "La Fosse",
+    "url": "https://www.linkedin.com/jobs/view/4399141812",
+    "location": "England, United Kingdom",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Sr. Cloud Solutions Architect",
+    "company": "The Amatriot Group",
+    "url": "https://www.linkedin.com/jobs/view/4402137331",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Technical Architect (Contract)",
+    "company": "Audi RED",
+    "url": "https://www.linkedin.com/jobs/view/4399977903",
+    "location": "Toronto, Ontario, Canada",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Director IT Architecture",
+    "company": "ESPO Corporation",
+    "url": "https://www.linkedin.com/jobs/view/4401789113",
+    "location": "Boston, MA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "AristaMD",
+    "url": "https://www.linkedin.com/jobs/view/4399904172",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Solutions Engineer",
+    "company": "Netcraft",
+    "url": "https://www.linkedin.com/jobs/view/4401740236",
+    "location": "Washington, DC",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "Inizio Partners",
+    "url": "https://www.linkedin.com/jobs/view/4401797373",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Enterprise Architect",
+    "company": "Logix Guru",
+    "url": "https://www.linkedin.com/jobs/view/4401108383",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "InterEx Group",
+    "url": "https://www.linkedin.com/jobs/view/4399718869",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Cut+Dry",
+    "url": "https://www.linkedin.com/jobs/view/4400763546",
+    "location": "San Francisco, CA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solution Architect Senior Manager",
+    "company": "Jobgether",
+    "url": "https://www.linkedin.com/jobs/view/4400726123",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "OMW Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4401726196",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "ThoughtLabs Belgium",
+    "url": "https://www.linkedin.com/jobs/view/4400735230",
+    "location": "Valletta, Malta",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Software Engineer, Full Stack",
+    "company": "Business Wire",
+    "url": "https://www.linkedin.com/jobs/view/4401772616",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "EXL",
+    "url": "https://www.linkedin.com/jobs/view/4400789104",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Lead Enterprise Architect (Azure/AWS)",
+    "company": "Unisys",
+    "url": "https://www.linkedin.com/jobs/view/4399797281",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solution Delivery Architect",
+    "company": "Jobgether",
+    "url": "https://www.linkedin.com/jobs/view/4400758901",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Contract role: Data Architect with strong Retail and AWS Experience at Plano, TX (Hybrid) (once in a 2 week or occasional basis)",
+    "company": "Yochana",
+    "url": "https://www.linkedin.com/jobs/view/4400756677",
+    "location": "Plano, TX",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Maxwell Bond",
+    "url": "https://www.linkedin.com/jobs/view/4399723332",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "DevOps & Cloud Architect",
+    "company": "Jobgether",
+    "url": "https://www.linkedin.com/jobs/view/4400093689",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Cloud Architect, ML/AI",
+    "company": "Jobgether",
+    "url": "https://www.linkedin.com/jobs/view/4400093466",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "The Senior Solutions Architect – Microsoft AI",
+    "company": "Jobgether",
+    "url": "https://www.linkedin.com/jobs/view/4400764275",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Mid - Senior Software Engineer (SDET)",
+    "company": "Sphere Labs",
+    "url": "https://www.linkedin.com/jobs/view/4401375280",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Desenvolvedor de Software - Sênior (Java)",
+    "company": "Montreal Oficial",
+    "url": "https://www.linkedin.com/jobs/view/4399585423",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Associate Cloud Architect",
+    "company": "TrustedTech",
+    "url": "https://www.linkedin.com/jobs/view/4399562355",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "SystemBender",
+    "url": "https://www.linkedin.com/jobs/view/4399511510",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Cloud Pre-sales Solutions Architect",
+    "company": "Optimum Healthcare IT",
+    "url": "https://www.linkedin.com/jobs/view/4399547826",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Cloud Solutions Architect",
+    "company": "Opti9 Tech",
+    "url": "https://www.linkedin.com/jobs/view/4401367946",
+    "location": "Omaha, NE",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Cloud Architect",
+    "company": "co.brick",
+    "url": "https://www.linkedin.com/jobs/view/4401064720",
+    "location": "Gliwice, Śląskie, Poland",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Cloud Architect - Healthcare Data Governance",
+    "company": "Accion Labs",
+    "url": "https://www.linkedin.com/jobs/view/4401397732",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Architect, Data Platform (Azure)",
+    "company": "CargoSprint",
+    "url": "https://www.linkedin.com/jobs/view/4401356378",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Cloud Architect",
+    "company": "Amtex Systems Inc",
+    "url": "https://www.linkedin.com/jobs/view/4401336932",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Cut+Dry",
+    "url": "https://www.linkedin.com/jobs/view/4399649048",
+    "location": "Vancouver, British Columbia, Canada",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "NXS Tech Ltd",
+    "url": "https://www.linkedin.com/jobs/view/4401037871",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AWS Cloud Architect",
+    "company": "InterEx Group",
+    "url": "https://www.linkedin.com/jobs/view/4399514794",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "Acceler8 Talent",
+    "url": "https://www.linkedin.com/jobs/view/4399580070",
+    "location": "Boston, MA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "Roadrunner",
+    "url": "https://www.linkedin.com/jobs/view/4401368932",
+    "location": "San Francisco, CA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "Vertiv",
+    "url": "https://www.linkedin.com/jobs/view/4401094597",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Digital Waffle",
+    "url": "https://www.linkedin.com/jobs/view/4399157562",
+    "location": "London Area, United Kingdom",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Belcan",
+    "url": "https://www.linkedin.com/jobs/view/4399678448",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Enterprise Solution Architect – Backend & Cloud",
+    "company": "Mogi I/O : OTT/Podcast/Short Video Apps for you",
+    "url": "https://www.linkedin.com/jobs/view/4401098208",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect, Enterprise",
+    "company": "Mapbox",
+    "url": "https://www.linkedin.com/jobs/view/4401388541",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "Viral Nation",
+    "url": "https://www.linkedin.com/jobs/view/4369983178",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Cloud Architect",
+    "company": "Trust In SODA",
+    "url": "https://www.linkedin.com/jobs/view/4403323622",
+    "location": "London Area, United Kingdom",
+    "source": "jobspy:linkedin",
+    "posted_at": "nan",
+    "tags": [
+      "solutions architect"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Hussmann",
+    "url": "https://www.linkedin.com/jobs/view/4391902234",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Cisco",
+    "url": "https://www.linkedin.com/jobs/view/4403451452",
+    "location": "Herndon, VA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solution Engineer",
+    "company": "Nuvei",
+    "url": "https://www.linkedin.com/jobs/view/4390270244",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Oraion",
+    "url": "https://www.linkedin.com/jobs/view/4400184791",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer- Remote",
+    "company": "BeyondTrust",
+    "url": "https://www.linkedin.com/jobs/view/4389772479",
+    "location": "California, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "INNERGY",
+    "url": "https://www.linkedin.com/jobs/view/4399580789",
+    "location": "Melbourne, Victoria, Australia",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Turnkey",
+    "url": "https://www.linkedin.com/jobs/view/4401783849",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer, Alliances",
+    "company": "Okta",
+    "url": "https://www.linkedin.com/jobs/view/4399796462",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "Headmatch GmbH & Co. KG",
+    "url": "https://www.linkedin.com/jobs/view/4379677998",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Developer",
+    "company": "Aviat Networks",
+    "url": "https://www.linkedin.com/jobs/view/4400751754",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Virtuous",
+    "url": "https://www.linkedin.com/jobs/view/4401102917",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Fullstack Developer (Java, React)",
+    "company": "Veem",
+    "url": "https://www.linkedin.com/jobs/view/4399769548",
+    "location": "Toronto, Ontario, Canada",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Junior LowCode Engineer",
+    "company": "SoftServe",
+    "url": "https://www.linkedin.com/jobs/view/4400755254",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer",
+    "company": "develop",
+    "url": "https://www.linkedin.com/jobs/view/4399728585",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Smarsh",
+    "url": "https://www.linkedin.com/jobs/view/4400751439",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Salesforce Engineer",
+    "company": "DMI",
+    "url": "https://www.linkedin.com/jobs/view/4401537783",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Full Stack Software Engineer",
+    "company": "Levanta Labs",
+    "url": "https://www.linkedin.com/jobs/view/4402023555",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "Sci-Net Business Solutions",
+    "url": "https://www.linkedin.com/jobs/view/4401708061",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Integration Engineer",
+    "company": "Jobgether",
+    "url": "https://www.linkedin.com/jobs/view/4400764397",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Principal Cloud DevOps Engineer",
+    "company": "Intellias",
+    "url": "https://www.linkedin.com/jobs/view/4401720556",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Square",
+    "url": "https://www.linkedin.com/jobs/view/4399575256",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Intezer",
+    "url": "https://www.linkedin.com/jobs/view/4401074565",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Blink22",
+    "url": "https://www.linkedin.com/jobs/view/4401058668",
+    "location": "Alexandria, Alexandria, Egypt",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "SOLUTIONS ENGINEER INTERNSHIP",
+    "company": "STATION F",
+    "url": "https://www.linkedin.com/jobs/view/4399189843",
+    "location": "Paris, Île-de-France, France",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Manual Tester",
+    "company": "Xenith Solutions",
+    "url": "https://www.linkedin.com/jobs/view/4400001915",
+    "location": "Virginia, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer EMEA (CIAM)",
+    "company": "neuco",
+    "url": "https://www.linkedin.com/jobs/view/4399504460",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer - (Asia) Remote",
+    "company": "Talkpush",
+    "url": "https://www.linkedin.com/jobs/view/4399169412",
+    "location": "Bangkok, Bangkok City, Thailand",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Software Engineer(Azure, .NET, AI)",
+    "company": "Solugenix",
+    "url": "https://www.linkedin.com/jobs/view/4401328775",
+    "location": "Hyderabad, Telangana, India",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Artificial Intelligence Engineer",
+    "company": "Maxwell Bond",
+    "url": "https://www.linkedin.com/jobs/view/4399644985",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Site Reliability Engineer",
+    "company": "Cloudbeds",
+    "url": "https://www.linkedin.com/jobs/view/4401331712",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Site Reliability Engineer",
+    "company": "Cloudbeds",
+    "url": "https://www.linkedin.com/jobs/view/4401328746",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer (UK)",
+    "company": "Qargo TMS",
+    "url": "https://www.linkedin.com/jobs/view/4399175089",
+    "location": "London, England, UK",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer - Global",
+    "company": "SHI International Corp.",
+    "url": "https://www.linkedin.com/jobs/view/4399565646",
+    "location": "Tennessee, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solution Engineer",
+    "company": "Sumo Logic",
+    "url": "https://www.linkedin.com/jobs/view/4389066181",
+    "location": "Noida, Uttar Pradesh, India",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Affinity.co",
+    "url": "https://www.linkedin.com/jobs/view/4401531149",
+    "location": "New York, NY",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Lead Site Reliability Engineer (SRE) - Azure",
+    "company": "EPAM Systems",
+    "url": "https://www.linkedin.com/jobs/view/4399534497",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer - Global",
+    "company": "SHI International Corp.",
+    "url": "https://www.linkedin.com/jobs/view/4399549930",
+    "location": "Florida, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions / Enterprise Architect - TOGAF, Finance, Azure, SAP - 100% Remote, UK",
+    "company": "MRP-Global",
+    "url": "https://www.linkedin.com/jobs/view/4399136974",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior - Solution Enginner- ESPECIALISTA DE REQUISITOS COM FOCO EM RH",
+    "company": "Ahoy by Belago",
+    "url": "https://www.linkedin.com/jobs/view/4401301349",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "L4 Systems Engineer (US Remote - MSP)",
+    "company": "GXA",
+    "url": "https://www.linkedin.com/jobs/view/4403885387",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "nan",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "L4 Systems Engineer (US Remote - MSP)",
+    "company": "GXA",
+    "url": "https://www.linkedin.com/jobs/view/4403898103",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "nan",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "L4 Systems Engineer (US Remote - MSP)",
+    "company": "GXA",
+    "url": "https://www.linkedin.com/jobs/view/4403894159",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "nan",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Fresher Software Engineer",
+    "company": "Joveo Ai",
+    "url": "https://www.linkedin.com/jobs/view/4403850141",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Junior Software Engineer",
+    "company": "Joveo Ai",
+    "url": "https://www.linkedin.com/jobs/view/4403852100",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Fresher Software Engineer",
+    "company": "Joveo Ai",
+    "url": "https://www.linkedin.com/jobs/view/4403832157",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Fresher Software Engineer",
+    "company": "Joveo Ai",
+    "url": "https://www.linkedin.com/jobs/view/4403839401",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Fresher Software Engineer",
+    "company": "Joveo Ai",
+    "url": "https://www.linkedin.com/jobs/view/4403837418",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "MLOps Engineer (Relocation to Serbia)",
+    "company": "Akvelon, Inc.",
+    "url": "https://www.linkedin.com/jobs/view/4400845048",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "MLOps Engineer (Relocation to Serbia)",
+    "company": "Akvelon, Inc.",
+    "url": "https://www.linkedin.com/jobs/view/4400808759",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Windows Systems / Low-Level Engineer (OS Internals & Platform Infrastructure)",
+    "company": "Jobgether",
+    "url": "https://www.linkedin.com/jobs/view/4402311967",
+    "location": "Israel, OH",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Swiggy",
+    "url": "https://www.linkedin.com/jobs/view/4403189686",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Developer / Python Developer / IOS Developer /Java Developer",
+    "company": "Great Value Hiring",
+    "url": "https://www.linkedin.com/jobs/view/4395464183",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Forward Deployed Engineer",
+    "company": "Nuclicore",
+    "url": "https://www.linkedin.com/jobs/view/4400485918",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer (Python Developer / IOS Developer /Java Developer)",
+    "company": "Great Value Hiring",
+    "url": "https://www.linkedin.com/jobs/view/4395457257",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "🚀Forward Deployed Engineer -  Remote - up to £145k🔥",
+    "company": "We Source Talent",
+    "url": "https://www.linkedin.com/jobs/view/4400825360",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer (Remote)",
+    "company": "Joveo Ai",
+    "url": "https://www.linkedin.com/jobs/view/4403457249",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Forward Deployed Engineer",
+    "company": "Prelude",
+    "url": "https://www.linkedin.com/jobs/view/4403102396",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Forward Deployed Engineer",
+    "company": "Code Metal",
+    "url": "https://www.linkedin.com/jobs/view/4403144201",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer JR",
+    "company": "Turbi",
+    "url": "https://www.linkedin.com/jobs/view/4402748154",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Forward Deployed Engineer",
+    "company": "Prelude",
+    "url": "https://www.linkedin.com/jobs/view/4403108384",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Ai Forward Deployed Engineer: Ai Agents/Gen Ai: £140-£200K Salary, REMOTE, Plus Bonus & Benefits",
+    "company": "FORTE ICT",
+    "url": "https://www.linkedin.com/jobs/view/4402966983",
+    "location": "Prague, Czechia",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Jr Implementation Engineer (Remote)",
+    "company": "DataBank",
+    "url": "https://www.linkedin.com/jobs/view/4401548280",
+    "location": "Dallas, TX",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "TESTADOR JR - RHA1409",
+    "company": "Spread Tecnologia",
+    "url": "https://www.linkedin.com/jobs/view/4400126373",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Winaxis LLC",
+    "url": "https://www.linkedin.com/jobs/view/4402293412",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "10x Software Engineer",
+    "company": "Lucidya | لوسيديا",
+    "url": "https://www.linkedin.com/jobs/view/4402241949",
+    "location": "Lisbon, Lisbon, Portugal",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "DevSecOps Engineer",
+    "company": "Changeis, Inc.",
+    "url": "https://www.linkedin.com/jobs/view/4402570616",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "DevSecOps Engineer",
+    "company": "Regal Cloud",
+    "url": "https://www.linkedin.com/jobs/view/4399993007",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer, iOS",
+    "company": "Meta",
+    "url": "https://www.linkedin.com/jobs/view/4255810897",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Developer",
+    "company": "National Inventors Hall of Fame",
+    "url": "https://www.linkedin.com/jobs/view/4402019937",
+    "location": "Ohio, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Desenvolvedor (a)  OutSystems Júnior",
+    "company": "Nimbi S/A",
+    "url": "https://www.linkedin.com/jobs/view/4400043152",
+    "location": "São Paulo, São Paulo, Brazil",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Forward Deployed Engineer",
+    "company": "Talkdesk",
+    "url": "https://www.linkedin.com/jobs/view/4401726070",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer (mobile)",
+    "company": "INNERGY",
+    "url": "https://www.linkedin.com/jobs/view/4401757477",
+    "location": "Cracow, Małopolskie, Poland",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Developer",
+    "company": "Syntax",
+    "url": "https://www.linkedin.com/jobs/view/4402001359",
+    "location": "Montreal, Quebec, Canada",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Forward Deployed AI Engineer",
+    "company": "StevenDouglas",
+    "url": "https://www.linkedin.com/jobs/view/4402021091",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer - Python & Go | $80/hr Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400711650",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer - Python & Go | $80/hr Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400718642",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Manual QA Engineer",
+    "company": "Enroute",
+    "url": "https://www.linkedin.com/jobs/view/4401797691",
+    "location": "Monterrey, Nuevo León, Mexico",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer & Automation",
+    "company": "Evvolve & Partners",
+    "url": "https://www.linkedin.com/jobs/view/4399785060",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer - Python & Go | $80/hr Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400701817",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Full Stack Engineer - Python & Go | $80/hr Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400711898",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Pyton Backend Developer (Contract, Remote)",
+    "company": "INFUSE",
+    "url": "https://www.linkedin.com/jobs/view/4401793811",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Graduate AI Automation & Innovation Specialist",
+    "company": "targetjobs UK",
+    "url": "https://www.linkedin.com/jobs/view/4399621809",
+    "location": "London, England, UK",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Agent Developer",
+    "company": "Sikich India",
+    "url": "https://www.linkedin.com/jobs/view/4399516362",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Forward Deployed Software Engineer",
+    "company": "Discovered MENA",
+    "url": "https://www.linkedin.com/jobs/view/4399538434",
+    "location": "Dubai, United Arab Emirates",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Junior Software Developer",
+    "company": "INNER Studios | Game Development",
+    "url": "https://www.linkedin.com/jobs/view/4398868088",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Pessoa Desenvolvedora de Software Júnior",
+    "company": "Clin Digital",
+    "url": "https://www.linkedin.com/jobs/view/4399553109",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Automation Specialist - PowerApps (Remote)",
+    "company": "edari",
+    "url": "https://www.linkedin.com/jobs/view/4401044345",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Bamboo Rose",
+    "url": "https://www.linkedin.com/jobs/view/4401079511",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Forward Deployed Engineer",
+    "company": "talentpluto",
+    "url": "https://www.linkedin.com/jobs/view/4404018436",
+    "location": "New York, NY",
+    "source": "jobspy:linkedin",
+    "posted_at": "nan",
+    "tags": [
+      "forward deployed engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Sr. QA Automation Engineer",
+    "company": "RELQ TECHNOLOGIES",
+    "url": "https://www.linkedin.com/jobs/view/4403832974",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Automation Electrical Design Engineer (Junior)",
+    "company": "Siemens",
+    "url": "https://www.linkedin.com/jobs/view/4391222984",
+    "location": "Greenville, SC",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior QA Automation Engineer, Lamina, Costa Rica",
+    "company": "West Monroe",
+    "url": "https://www.linkedin.com/jobs/view/4311718609",
+    "location": "Heredia, Costa Rica",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Automation Test Engineer (Remote)",
+    "company": "Joveo Ai",
+    "url": "https://www.linkedin.com/jobs/view/4403461106",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Automation Engineer",
+    "company": "Medecision",
+    "url": "https://www.linkedin.com/jobs/view/4402769344",
+    "location": "Pennsylvania, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Low-Code / No-Code Automation Engineer",
+    "company": "Huzzle.com",
+    "url": "https://www.linkedin.com/jobs/view/4402943265",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Automation Design Engineer",
+    "company": "Jobgether",
+    "url": "https://www.linkedin.com/jobs/view/4401859670",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Low-Code / No-Code Automation Engineer",
+    "company": "Huzzle.com",
+    "url": "https://www.linkedin.com/jobs/view/4402947228",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Low-Code / No-Code Automation Engineer",
+    "company": "Huzzle.com",
+    "url": "https://www.linkedin.com/jobs/view/4402938328",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Low-Code Automation Engineer - Freelance AI Trainer",
+    "company": "Mindrift",
+    "url": "https://www.linkedin.com/jobs/view/4402621743",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Low-Code Automation Engineer - Freelance AI Trainer",
+    "company": "Mindrift",
+    "url": "https://www.linkedin.com/jobs/view/4402622733",
+    "location": "Paris, Île-de-France, France",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Low-Code Automation Engineer - Freelance AI Trainer",
+    "company": "Mindrift",
+    "url": "https://www.linkedin.com/jobs/view/4402615804",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Low-Code Automation Engineer - Freelance AI Trainer",
+    "company": "Mindrift",
+    "url": "https://www.linkedin.com/jobs/view/4402619737",
+    "location": "Berlin, Berlin, Germany",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Low-Code Automation Engineer - Freelance AI Trainer",
+    "company": "Mindrift",
+    "url": "https://www.linkedin.com/jobs/view/4402610820",
+    "location": "Hamburg, Hamburg, Germany",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Robotics Engineer",
+    "company": "Cognitive Group | Part of the Focus Cloud Group",
+    "url": "https://www.linkedin.com/jobs/view/4399938373",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Low-Code Automation Engineer - Freelance AI Trainer",
+    "company": "Mindrift",
+    "url": "https://www.linkedin.com/jobs/view/4402582980",
+    "location": "Manchester, England, UK",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Automation Engineer I",
+    "company": "CertainTeed",
+    "url": "https://www.linkedin.com/jobs/view/4402032345",
+    "location": "Nashville, AR",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Robotics Engineer",
+    "company": "AGS",
+    "url": "https://www.linkedin.com/jobs/view/4399731653",
+    "location": "Texas, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "QE Automation Engineer",
+    "company": "Atos",
+    "url": "https://www.linkedin.com/jobs/view/4399577877",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Automation Engineer",
+    "company": "CertainTeed",
+    "url": "https://www.linkedin.com/jobs/view/4402023742",
+    "location": "Nashville, AR",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Electrical Engineer | Upto $95/hr",
+    "company": "Mercor",
+    "url": "https://www.linkedin.com/jobs/view/4400031357",
+    "location": "New York, NY",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Process Automation and Control Engineer",
+    "company": "Solenis",
+    "url": "https://www.linkedin.com/jobs/view/4399905147",
+    "location": "West Virginia, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Automation Engineer",
+    "company": "Prosum",
+    "url": "https://www.linkedin.com/jobs/view/4400761818",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer & Automation",
+    "company": "Evvolve & Partners",
+    "url": "https://www.linkedin.com/jobs/view/4399781144",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "QA Automation Engineer",
+    "company": "Brandt Information Services",
+    "url": "https://www.linkedin.com/jobs/view/4401387869",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Electrical Engineer – Test Setup, Commissioning & Sustaining",
+    "company": "Global Connect Technologies",
+    "url": "https://www.linkedin.com/jobs/view/4401799001",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Manufacturing Test Engineer, AI Compute Infrastructure - Stargate",
+    "company": "OpenAI",
+    "url": "https://www.linkedin.com/jobs/view/4399722053",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Manual QA engineer",
+    "company": "Object First",
+    "url": "https://www.linkedin.com/jobs/view/4401744430",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "QA automatizacion | Teletrabajo",
+    "company": "ALTEN Spain",
+    "url": "https://www.linkedin.com/jobs/view/4399723955",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Automation Engineer",
+    "company": "Infojini Inc",
+    "url": "https://www.linkedin.com/jobs/view/4401764825",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Quality Assurance Engineer",
+    "company": "EatClub",
+    "url": "https://www.linkedin.com/jobs/view/4401738092",
+    "location": "Sydney, New South Wales, Australia",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "QA / Test Engineer",
+    "company": "Careerswift",
+    "url": "https://www.linkedin.com/jobs/view/4402047084",
+    "location": "San Francisco, CA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Electrical / Design Engineer",
+    "company": "ExecutivePlacements.com",
+    "url": "https://www.linkedin.com/jobs/view/4400076691",
+    "location": "Cape Town, Western Cape, South Africa",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Software Development Engineer in Test (SDET)",
+    "company": "Comcarde Ltd",
+    "url": "https://www.linkedin.com/jobs/view/4402037802",
+    "location": "Edinburgh, Scotland, UK",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "DevOps Engineer (Automation Systems) - Freelance AI Trainer",
+    "company": "Mindrift",
+    "url": "https://www.linkedin.com/jobs/view/4402008812",
+    "location": "Manchester, England, UK",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "QA Automation Engineer (Process Owner)",
+    "company": "REM Waste Management",
+    "url": "https://www.linkedin.com/jobs/view/4401718414",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Quality Assurance Engineer",
+    "company": "Linnworks",
+    "url": "https://www.linkedin.com/jobs/view/4400011334",
+    "location": "Greater London, England, UK",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Automation Engineer",
+    "company": "Communities.Tech",
+    "url": "https://www.linkedin.com/jobs/view/4401060834",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer in Test",
+    "company": "Compri Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400001593",
+    "location": "Denver, CO",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Quality Assurance Engineer - Remote Work",
+    "company": "BairesDev",
+    "url": "https://www.linkedin.com/jobs/view/4399645662",
+    "location": "Jalisco, Mexico",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Quality Assurance Engineer",
+    "company": "Fountain",
+    "url": "https://www.linkedin.com/jobs/view/4399641244",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Automation Engineer (Automation Anywhere/A360)",
+    "company": "H.W. Kaufman Group",
+    "url": "https://www.linkedin.com/jobs/view/4397359244",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior QA Engineer",
+    "company": "Forte Group",
+    "url": "https://www.linkedin.com/jobs/view/4401064301",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "QA Automation Engineer",
+    "company": "Litify",
+    "url": "https://www.linkedin.com/jobs/view/4402169814",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer / QA Engineer in Python (ML environment)",
+    "company": "Aderen",
+    "url": "https://www.linkedin.com/jobs/view/4399198801",
+    "location": "Las Rozas de Madrid, Community of Madrid, Spain",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "QA Test Automation Engineer",
+    "company": "Bitrefill",
+    "url": "https://www.linkedin.com/jobs/view/4400002040",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Vehicle Test Engineer - ADAS",
+    "company": "NVIDIA",
+    "url": "https://www.linkedin.com/jobs/view/4400014853",
+    "location": "Hamburg, Hamburg, Germany",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "automation engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Associate AI/ML Engineer",
+    "company": "New York Technology Partners",
+    "url": "https://www.linkedin.com/jobs/view/4403812785",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Direct-Response Copywriter & Creative Strategist (VSL/Mini-VSL Focus)",
+    "company": "Ad-Lab",
+    "url": "https://www.linkedin.com/jobs/view/4403840632",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Conversational Designer",
+    "company": "Hello Patient",
+    "url": "https://www.linkedin.com/jobs/view/4403445601",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Conversation Designer",
+    "company": "Net2Source (N2S)",
+    "url": "https://www.linkedin.com/jobs/view/4403445637",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Product Manager, AI Transformation",
+    "company": "Crypto.com",
+    "url": "https://www.linkedin.com/jobs/view/4400494807",
+    "location": "Dubai, Dubai, United Arab Emirates",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Product Manager, AI Transformation",
+    "company": "Crypto.com",
+    "url": "https://www.linkedin.com/jobs/view/4400485924",
+    "location": "Sydney, New South Wales, Australia",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Chatbot Tester",
+    "company": "Alignerr",
+    "url": "https://www.linkedin.com/jobs/view/4403175905",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Conversation Designer",
+    "company": "Servsys Corporation",
+    "url": "https://www.linkedin.com/jobs/view/4402744796",
+    "location": "Arlington, TX",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Chatbot Tester",
+    "company": "Alignerr",
+    "url": "https://www.linkedin.com/jobs/view/4403185821",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "VP, Growth & Digital Technology",
+    "company": "BrainWorks",
+    "url": "https://www.linkedin.com/jobs/view/4402751141",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Chatbot Tester",
+    "company": "Alignerr",
+    "url": "https://www.linkedin.com/jobs/view/4403191658",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Principal Researcher, Conversational AI & Channels",
+    "company": "Humana",
+    "url": "https://www.linkedin.com/jobs/view/4400479590",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Chatbot Tester",
+    "company": "Alignerr",
+    "url": "https://www.linkedin.com/jobs/view/4403175899",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Business Development Research Intern",
+    "company": "Joveo Ai",
+    "url": "https://www.linkedin.com/jobs/view/4403448364",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Generative AI / ML Engineer",
+    "company": "Precision Technologies",
+    "url": "https://www.linkedin.com/jobs/view/4402387987",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Conversation Designer",
+    "company": "Pearl",
+    "url": "https://www.linkedin.com/jobs/view/4402179185",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Conversational AI Developer",
+    "company": "OZ",
+    "url": "https://www.linkedin.com/jobs/view/4402963648",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "YouTube Scriptwriter",
+    "company": "CreoSocial",
+    "url": "https://www.linkedin.com/jobs/view/4402072285",
+    "location": "Greater Toronto Area, Canada",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Text & Reasoning LLM / NLU Tech Lead",
+    "company": "Omilia",
+    "url": "https://www.linkedin.com/jobs/view/4402935180",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Thai Culture and Language Expert in Singapore",
+    "company": "Welo Data",
+    "url": "https://www.linkedin.com/jobs/view/4400426006",
+    "location": "Singapore, Singapore",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Thai Culture and Language Expert in Malaysia",
+    "company": "Welo Data",
+    "url": "https://www.linkedin.com/jobs/view/4400422019",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Text & Reasoning LLM / NLU Tech Lead",
+    "company": "Omilia",
+    "url": "https://www.linkedin.com/jobs/view/4402944047",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Project Manager - AI Solutions",
+    "company": "Fortell.ai",
+    "url": "https://www.linkedin.com/jobs/view/4400444256",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Voice Recording Specialist",
+    "company": "Alignerr",
+    "url": "https://www.linkedin.com/jobs/view/4402689778",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Data Annotation",
+    "company": "E-Solutions",
+    "url": "https://www.linkedin.com/jobs/view/4402909207",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Artificial Intelligence Consultant",
+    "company": "Link Datacenter",
+    "url": "https://www.linkedin.com/jobs/view/4401852814",
+    "location": "Cairo, Egypt",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "VP, Technology | Rebuild Product Development | Voice AI",
+    "company": "One Eighty Collective",
+    "url": "https://www.linkedin.com/jobs/view/4402632970",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Conversational AI Engineer",
+    "company": "Bush and Bush Law Group",
+    "url": "https://www.linkedin.com/jobs/view/4402614756",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Conversational AI Engineer",
+    "company": "Bush and Bush Law Group",
+    "url": "https://www.linkedin.com/jobs/view/4402618802",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Conversational AI Engineer",
+    "company": "Bush and Bush Law Group",
+    "url": "https://www.linkedin.com/jobs/view/4402617848",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Conversational AI Engineer (LLM & Google Cloud)",
+    "company": "Pyramid Consulting, Inc",
+    "url": "https://www.linkedin.com/jobs/view/4402625647",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Quality Analyst (Portuguese) [209420]",
+    "company": "Skill",
+    "url": "https://www.linkedin.com/jobs/view/4402649051",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Voice Over Artist - UK English",
+    "company": "Alignerr",
+    "url": "https://www.linkedin.com/jobs/view/4402227745",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Product Manager - Conversational Products",
+    "company": "Infermedica",
+    "url": "https://www.linkedin.com/jobs/view/4402566978",
+    "location": "London, England, UK",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Go-to-Market Engineer (UK)",
+    "company": "Flosum",
+    "url": "https://www.linkedin.com/jobs/view/4402541140",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Go-to-Market Engineer (Serbia)",
+    "company": "Flosum",
+    "url": "https://www.linkedin.com/jobs/view/4402528817",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Chief of Staff (Founding Operator) ($100k-$140k + Equity) at Dealflowagent.com",
+    "company": "Jack & Jill",
+    "url": "https://www.linkedin.com/jobs/view/4401552861",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Speech-to-Speech English Voice AI Tester",
+    "company": "SME Careers",
+    "url": "https://www.linkedin.com/jobs/view/4401578997",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Speech-to-Speech English Voice AI Tester",
+    "company": "SME Careers",
+    "url": "https://www.linkedin.com/jobs/view/4401583652",
+    "location": "Houston, TX",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Speech-to-Speech English Voice AI Tester",
+    "company": "SME Careers",
+    "url": "https://www.linkedin.com/jobs/view/4401589516",
+    "location": "Chicago, IL",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Speech-to-Speech English Voice AI Tester",
+    "company": "SME Careers",
+    "url": "https://www.linkedin.com/jobs/view/4401592452",
+    "location": "Philadelphia, PA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Digital Product Designer for AI",
+    "company": "Aras Corporation",
+    "url": "https://www.linkedin.com/jobs/view/4370881895",
+    "location": "Andover, MA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Strategic Customer Success Manager",
+    "company": "ALLSTARSIT",
+    "url": "https://www.linkedin.com/jobs/view/4401731820",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "German Linguist – AI Content Evaluation & Quality Review",
+    "company": "Welo Data",
+    "url": "https://www.linkedin.com/jobs/view/4399757769",
+    "location": "London, England, UK",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Account Executive - United Kingdom",
+    "company": "Omilia",
+    "url": "https://www.linkedin.com/jobs/view/4401734355",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Conversational AI Designer",
+    "company": "ChatGPT Jobs",
+    "url": "https://www.linkedin.com/jobs/view/4399588395",
+    "location": "Austin, TX",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "GEO Specialist",
+    "company": "Think Design Collaborative",
+    "url": "https://www.linkedin.com/jobs/view/4399144937",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Conversational AI Quality Analyst",
+    "company": "Alignerr",
+    "url": "https://www.linkedin.com/jobs/view/4403873329",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "nan",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Conversational AI Quality Analyst",
+    "company": "Alignerr",
+    "url": "https://www.linkedin.com/jobs/view/4403873318",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "nan",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Entry Specialist",
+    "company": "Swooped",
+    "url": "https://www.linkedin.com/jobs/view/4403899398",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "nan",
+    "tags": [
+      "conversational AI"
+    ],
+    "description": ""
+  }
+]

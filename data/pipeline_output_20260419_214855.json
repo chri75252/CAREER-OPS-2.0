@@ -1,0 +1,1370 @@
+[
+  {
+    "title": "Test Automation Engineer",
+    "company": "540",
+    "url": "https://remoteOK.com/remote-jobs/remote-test-automation-engineer-540-1131147",
+    "location": "Remote",
+    "source": "remoteok",
+    "posted_at": "",
+    "tags": [
+      "test",
+      "design",
+      "system",
+      "support",
+      "testing",
+      "api",
+      "engineer",
+      "engineering",
+      "full-time",
+      "digital nomad"
+    ],
+    "description": "540 is seeking a Test Automation Engineer to support the DoW in building a next-generation Air Force aircraft maintenance application powered by Angular, Apigee, Kubernetes, and Google Cloud. Test Engineers on this team design and implement automated tests to ensure the platform performs reliably as it supports Air Force maintenance operations. You'll work closely with engineers, architects, and product stakeholders to validate system integrations, improve test coverage, and ensure the platform operates reliably across distributed systems and services.\n\nThis role is offered as a contract engagement and is ideal for engineers who value flexibility, autonomy, and high-impact work. While there may be an opportunity to convert to full-time in the future, conversion is not guaranteed and is dependent on program needs.\n\n<strong>Location</strong>: Remote within the continental United States, East Coast working hours<br><strong>Citizenship &amp; Clearance Requirement</strong>: per client requirements, candidates must be a U.S. Citizen with the ability to obtain a DoD Secret clearance<br><strong>Education Requirement: </strong>Bachelor's Degree in Computer Science or related engineering field (preferred)<br><strong>Contract Duration: </strong>initial 12 month contract, 40 hours per week\n\n<strong>WHY 540?</strong>\n\n540 is a forward-thinking company that the government turns to in order to #getshitdone. We don't just talk about innovation â we deliver it. We break down barriers, build impactful technology, and solve mission-critical problems.\n\n<strong>HOW YOU'LL DRIVE IMPACT</strong>\n<ul>\n<li>Own and manage development-level testing process and outcomes across the platform</li>\n<li>Design, develop, and maintain automated tests to validate functionality across APIs, microservices, and user interfaces</li>\n<li>Develop and execute integration, functional, and regression tests for distributed systems&nbsp;</li>\n<li>Build and maintain automated API tests f<br/><br/>Please mention the word **FLAWLESS** and tag RNDEuMjI3LjQzLjEwOQ== when applying to show you read the job post completely (#RNDEuMjI3LjQzLjEwOQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human."
+  },
+  {
+    "title": "Senior Solutions Architect",
+    "company": "540",
+    "url": "https://remoteOK.com/remote-jobs/remote-senior-solutions-architect-540-1131145",
+    "location": "Remote",
+    "source": "remoteok",
+    "posted_at": "",
+    "tags": [
+      "architect",
+      "design",
+      "system",
+      "technical",
+      "support",
+      "cloud",
+      "lead",
+      "senior",
+      "operations",
+      "reliability",
+      "engineering",
+      "digital nomad"
+    ],
+    "description": "540 is seeking a Senior Solutions Architect to support our partnership with Google and the DoW in building new capabilities for an Air Force integration platform. This platform leverages Google Cloud, Apigee, and Kubernetes to enable scalable, secure, and mission-critical systems. \n\nIn this role, you will lead technical architecture efforts and drive the design and delivery of complex, distributed systems. A key focus of this work is enabling disconnected operations (offline-first) capabilities that ensure platform reliability and continuity in degraded or low-connectivity environments supporting Air Force operations.\n\n<strong>Location</strong>: Remote within the continental United States<br><strong>Citizenship &amp; Clearance Requirement</strong>: per client requirements, candidates must be a U.S. Citizen with the ability to obtain a DoD Secret clearance<br><strong>Education Requirement: </strong>Bachelorâs Degree in Computer Science or related engineering field (preferred)<br><strong>540 Internal Thrive Level: </strong>Senior Solutions Architect\n\n<strong>WHY 540?</strong>\n\n540 is a forward-thinking company that the government turns to in order to #getshitdone. We donât just talk about innovation â we deliver it. We break down barriers, build impactful technology, and solve mission-critical problems.\n\n<strong>HOW YOUâLL DRIVE IMPACT</strong>\n<ul>\n<li>Lead the architecture and delivery of an Air Force integration platform built on Google Cloud, Apigee, and Kubernetes</li>\n<li>Design and guide implementation of scalable, secure, and maintainable cloud architectures</li>\n<li>Partner with engineers, architects, and product stakeholders to translate mission needs into technical solutions and platform capabilities</li>\n<li>Support engineering teams in designing, building, and troubleshooting distributed systems and cloud-native applications</li>\n<li>Drive architectural decisions across cloud, networking, system design, and service integrations, and define conflict reso<br/><br/>Please mention the word **HARDIER** and tag RNDEuMjI3LjQzLjEwOQ== when applying to show you read the job post completely (#RNDEuMjI3LjQzLjEwOQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human."
+  },
+  {
+    "title": "Senior Software Engineer II Applied AI and Evaluations",
+    "company": "Smartsheet",
+    "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-ii-applied-ai-and-evaluations-smartsheet-1131095",
+    "location": "Remote",
+    "source": "remoteok",
+    "posted_at": "",
+    "tags": [
+      "software",
+      "design",
+      "embedded",
+      "qa",
+      "management",
+      "senior",
+      "engineer",
+      "engineering",
+      "digital nomad"
+    ],
+    "description": "For over 20 years, Smartsheet has helped people and teams achieveâwell, anything. From seamless work management to smart, scalable solutions, we've always worked with flow. We're building tools that empower teams to automate the manual, uncover insights, and scale smarter. But more than that, we're creating spaceâ space to think big, take action, and unlock the kind of work that truly matters. Because when challenge meets purpose, and passion turns into progress, that's magic at work, and it's what we show up for everyday.\n\nSmartsheet is building the next generation of AI-powered work management through SmartAssist, our intelligent agent platform. As we scale from early demos to production-grade agents, quality is the critical frontier and we are looking for a Agent Quality Engineer to own it.\n\nThis is not a QA role. It's a deeply technical, high-autonomy position at the intersection of LLM evaluation, prompt and context engineering, and retrieval-augmented generation. You will diagnose why our agents fail, design the systems that catch regressions, and drive measurable improvements across our orchestrator and subagent fleet.\n\nYou will work closely with our Agent Engineering and AI Platform teams, embedded in a team that has already shipped evaluation infrastructure on Databricks/MLflow and is building toward a mature Agent Development Lifecycle (ADLC).\n\nYou Will:\n- Own agent quality end-to-end: diagnosis, improvement, and validation across SmartAssist's orchestrator and subagents\n- Identify failure modes across quality dimensions factual accuracy, completeness, tone, actionability, and latency and prioritize what to fix\n- Drive quality improvements through prompt engineering,<br/><br/>Please mention the word **FRESHER** and tag RNDEuMjI3LjQzLjEwOQ== when applying to show you read the job post completely (#RNDEuMjI3LjQzLjEwOQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human."
+  },
+  {
+    "title": "Senior Independent AI Engineer / Architect",
+    "company": "A.Team",
+    "url": "https://remotive.com/remote-jobs/software-development/senior-independent-ai-engineer-architect-1919266",
+    "location": "Americas, Europe, Israel",
+    "source": "remotive",
+    "posted_at": "2026-04-16T10:16:01",
+    "tags": [
+      "go",
+      "UI/UX",
+      "wordpress",
+      "chat",
+      "apple",
+      "testing",
+      "catalyst"
+    ],
+    "description": "<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\" style=\"border-color: oklch(0.3039 0.04 213.68 / 0.16); scrollbar-color: initial; scrollbar-width: initial; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb("
+  },
+  {
+    "title": "Senior Full-stack React Developer",
+    "company": "Lemon.io",
+    "url": "https://remotive.com/remote-jobs/software-development/senior-full-stack-react-developer-2088711",
+    "location": "Americas, Europe, Asia, Oceania",
+    "source": "remotive",
+    "posted_at": "2026-04-15T14:19:37",
+    "tags": [
+      ".Net",
+      "android",
+      "AWS",
+      "azure",
+      "backend",
+      "C",
+      "C#",
+      "C++",
+      "data science",
+      "fullstack",
+      "golang",
+      "ios",
+      "java",
+      "javascript",
+      "node.js",
+      "php",
+      "python",
+      "react",
+      "react js",
+      "ruby/rails",
+      "shopify",
+      "video",
+      "blockchain",
+      "AI/ML",
+      "react native",
+      "rust",
+      "unity",
+      "spring",
+      "data analysis",
+      "laravel",
+      "solidity",
+      "flask",
+      "Typescript ",
+      "angular ",
+      "GCP",
+      "data engineering",
+      "Symfony",
+      "startup",
+      "marketplace",
+      "next.js"
+    ],
+    "description": "<p>Are you a talented Senior Developer looking for a remote job that lets you show your skills and get decent compensation? Look no further than <a href=\"https://lemon.io/for-developers/?utm_source=remotive&amp;utm_medium=job_ad&amp;utm_campaign=supply_en_react_python/golang_apr_2026_job_ad\" rel=\"nofollow\" target=\"_self\">Lemon.io</a> — the marketplace that connects you with hand-picked startups in the US and Europe.</p>\n<p><strong> </strong></p>\n<p><strong>What we offer:</strong></p>\n<ul style=\""
+  },
+  {
+    "title": "Senior Solutions Architect",
+    "company": "Automat-it",
+    "url": "https://www.arbeitnow.com/jobs/companies/automat-it/remote-senior-solutions-architect-berlin-33490",
+    "location": "Remote",
+    "source": "arbeitnow",
+    "posted_at": 1776469331,
+    "tags": [
+      "Remote"
+    ],
+    "description": "<p>Automat-it is an all-in AWS Premier Partner and Managed Services Provider specializing in the startup ecosystem. With over 800 customers and 500+ AWS certifications, Automat-it brings hands-on expertise in AI, DevOps, and FinOps to empower fast-paced startups to grow, deliver &amp; win. Our customers save significant time-to-market and optimize their cloud performance and costs.</p><p>We work across EMEA and the US, fueling innovation and solving complex challenges daily. Join us to grow your"
+  },
+  {
+    "title": "AI Engineer (f/m/d)",
+    "company": "Apaleo",
+    "url": "https://www.arbeitnow.com/jobs/companies/apaleo/ai-engineer-munich-273844",
+    "location": "Remote",
+    "source": "arbeitnow",
+    "posted_at": 1776458720,
+    "tags": [],
+    "description": "<h1>Join Apaleo and Shape the Future of Hospitality Tech!</h1>\n<p>Apaleo is the world's most open, API-first property management platform powering the next generation of hospitality operations. Its modular, AI-powered infrastructure enables hoteliers to customise their tech stack, automate routine work, and deliver seamless, personalised guest experiences, powered by best-in-class apps and autonomous AI agents that adapt to every stay.</p>\n<p>We are seeking <strong>AI Engineer's (f/m/d)</strong>"
+  },
+  {
+    "title": "(Senior) Solution Manager - Contact Center & Conversational AI (w/m/d)",
+    "company": "tecRacer Germany GmbH",
+    "url": "https://www.arbeitnow.com/jobs/companies/tecracer-germany-gmbh/senior-solution-manager-contact-center-conversational-ai-hanover-235372",
+    "location": "Remote",
+    "source": "arbeitnow",
+    "posted_at": 1776439873,
+    "tags": [
+      "Remote",
+      "Business Consulting"
+    ],
+    "description": "<h2>Jobbeschreibung</h2>\n<h2>Das sind wir</h2>\n<p>tecRacer ist einer der führenden AWS Premier Consulting Partner in Deutschland. Seit über 20 Jahren begleiten wir Unternehmen bei ihrer Cloud-Transformation – mit echtem Tiefgang, direktem AWS-Zugang und einem Team, das Cloud nicht nur versteht, sondern lebt.</p>\n<p>Wir sind kein Konzern, aber auch kein Startup: Wir sind ein erfahrenes, bodenständiges Unternehmen mit kurzen Entscheidungswegen und einer Unternehmenskultur, in der Eigenverantwortun"
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Reddit, Inc.",
+    "url": "https://www.linkedin.com/jobs/view/4282877162",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "FIT:MATCH.ai",
+    "url": "https://www.linkedin.com/jobs/view/4403013082",
+    "location": "San Jose, CA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer (Remote)",
+    "company": "Joveo Ai",
+    "url": "https://www.linkedin.com/jobs/view/4403831808",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-18",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Great Value Hiring",
+    "url": "https://www.linkedin.com/jobs/view/4378454290",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Developer (Freelance)",
+    "company": "Mindrift",
+    "url": "https://www.linkedin.com/jobs/view/4403402147",
+    "location": "Birmingham, England, UK",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer (Remote)",
+    "company": "Joveo Ai",
+    "url": "https://www.linkedin.com/jobs/view/4403428302",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer, Machine Learning",
+    "company": "Meta",
+    "url": "https://www.linkedin.com/jobs/view/4255818024",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Liftoff Mobile",
+    "url": "https://www.linkedin.com/jobs/view/4378525250",
+    "location": "California, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Python AI Engineer",
+    "company": "DeweyLearn, Inc.",
+    "url": "https://www.linkedin.com/jobs/view/4399981047",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer (Remote)",
+    "company": "StackAdapt",
+    "url": "https://www.linkedin.com/jobs/view/4389594573",
+    "location": "Greater Toronto Area, Canada",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Shipt",
+    "url": "https://www.linkedin.com/jobs/view/4402000096",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Scientist - AI/ML | Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400747833",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer I, AI",
+    "company": "AARP",
+    "url": "https://www.linkedin.com/jobs/view/4399787145",
+    "location": "Washington, DC",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "RAZOR",
+    "url": "https://www.linkedin.com/jobs/view/4400771941",
+    "location": "Reston, VA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Scientist - AI/ML | Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400764167",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400033522",
+    "location": "Alexandria, VA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Scientist - AI/ML | Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400759281",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400031566",
+    "location": "Austin, CO",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer Intern",
+    "company": "Melotech",
+    "url": "https://www.linkedin.com/jobs/view/4400786974",
+    "location": "Berlin, Berlin, Germany",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Scientist",
+    "company": "Hermes Corporate",
+    "url": "https://www.linkedin.com/jobs/view/4401720544",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Scientist - AI/ML | Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400753386",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400035485",
+    "location": "Riyadh, Riyadh, Saudi Arabia",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Data Scientist - AI/ML | Remote",
+    "company": "Crossing Hurdles",
+    "url": "https://www.linkedin.com/jobs/view/4400751323",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400035471",
+    "location": "Toronto, Ontario, Canada",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer ($140K – $210K + Equity) at Ambrook",
+    "company": "Jack & Jill",
+    "url": "https://www.linkedin.com/jobs/view/4401569726",
+    "location": "San Francisco, CA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400040427",
+    "location": "Melbourne, Victoria, Australia",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4400036526",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Roper Technologies, Inc.",
+    "url": "https://www.linkedin.com/jobs/view/4401398242",
+    "location": "Sarasota, FL",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Developer –Agents",
+    "company": "Hach",
+    "url": "https://www.linkedin.com/jobs/view/4401070277",
+    "location": "Bengaluru, Karnataka, India",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI Developer –Agents",
+    "company": "Hach",
+    "url": "https://www.linkedin.com/jobs/view/4401066388",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399622898",
+    "location": "Phoenix, AZ",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399612964",
+    "location": "Boston, MA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399620919",
+    "location": "Gurgaon, Haryana, India",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399632059",
+    "location": "Pune Division, Maharashtra, India",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399626841",
+    "location": "New York, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399624880",
+    "location": "Dallas, TX",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399625786",
+    "location": "Phoenix, AZ",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399620922",
+    "location": "North Carolina, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399624866",
+    "location": "San Antonio, TX",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399623862",
+    "location": "Atlanta, GA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399623863",
+    "location": "Washington, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399614939",
+    "location": "Alexandria, VA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399612963",
+    "location": "San Jose, CA",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399627823",
+    "location": "Lyon, Auvergne-Rhône-Alpes, France",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399611998",
+    "location": "North Carolina, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399620925",
+    "location": "Paris, Île-de-France, France",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399631540",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399624879",
+    "location": "Munich, Bavaria, Germany",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399631534",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "AI/ML Engineer - Remote",
+    "company": "YO IT Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4399631533",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "AI engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Hussmann",
+    "url": "https://www.linkedin.com/jobs/view/4391902234",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Netradyne",
+    "url": "https://www.linkedin.com/jobs/view/4385537674",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-17",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solution Engineer",
+    "company": "Nuvei",
+    "url": "https://www.linkedin.com/jobs/view/4390270244",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Oraion",
+    "url": "https://www.linkedin.com/jobs/view/4400184791",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-16",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Eltropy",
+    "url": "https://www.linkedin.com/jobs/view/4370764082",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer- Remote",
+    "company": "BeyondTrust",
+    "url": "https://www.linkedin.com/jobs/view/4389772479",
+    "location": "California, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-15",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "INNERGY",
+    "url": "https://www.linkedin.com/jobs/view/4399580789",
+    "location": "Melbourne, Victoria, Australia",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "Inizio Partners",
+    "url": "https://www.linkedin.com/jobs/view/4401797373",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Solutions Engineer",
+    "company": "Netcraft",
+    "url": "https://www.linkedin.com/jobs/view/4401740236",
+    "location": "Washington, DC",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Turnkey",
+    "url": "https://www.linkedin.com/jobs/view/4401783849",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer, Alliances",
+    "company": "Okta",
+    "url": "https://www.linkedin.com/jobs/view/4399796462",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "OMW Consulting",
+    "url": "https://www.linkedin.com/jobs/view/4401726196",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "Headmatch GmbH & Co. KG",
+    "url": "https://www.linkedin.com/jobs/view/4379677998",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Developer",
+    "company": "Aviat Networks",
+    "url": "https://www.linkedin.com/jobs/view/4400751754",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Fullstack Developer (Java, React)",
+    "company": "Veem",
+    "url": "https://www.linkedin.com/jobs/view/4399769548",
+    "location": "Toronto, Ontario, Canada",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Virtuous",
+    "url": "https://www.linkedin.com/jobs/view/4401102917",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Smarsh",
+    "url": "https://www.linkedin.com/jobs/view/4400751439",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer",
+    "company": "develop",
+    "url": "https://www.linkedin.com/jobs/view/4399728585",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Backend & Applied AI Software Engineer",
+    "company": "Levanta Labs",
+    "url": "https://www.linkedin.com/jobs/view/4402009332",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Integration Engineer",
+    "company": "Jobgether",
+    "url": "https://www.linkedin.com/jobs/view/4400764397",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "Sci-Net Business Solutions",
+    "url": "https://www.linkedin.com/jobs/view/4401708061",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Full Stack Software Engineer",
+    "company": "Levanta Labs",
+    "url": "https://www.linkedin.com/jobs/view/4402023555",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Principal Cloud DevOps Engineer",
+    "company": "Intellias",
+    "url": "https://www.linkedin.com/jobs/view/4401720556",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solution Delivery Architect",
+    "company": "Jobgether",
+    "url": "https://www.linkedin.com/jobs/view/4400758901",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-14",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Square",
+    "url": "https://www.linkedin.com/jobs/view/4399575256",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Blink22",
+    "url": "https://www.linkedin.com/jobs/view/4401058668",
+    "location": "Alexandria, Alexandria, Egypt",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "SOLUTIONS ENGINEER INTERNSHIP",
+    "company": "STATION F",
+    "url": "https://www.linkedin.com/jobs/view/4399189843",
+    "location": "Paris, Île-de-France, France",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Manual Tester",
+    "company": "Xenith Solutions",
+    "url": "https://www.linkedin.com/jobs/view/4400001915",
+    "location": "Virginia, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Intezer",
+    "url": "https://www.linkedin.com/jobs/view/4401074565",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "SystemBender",
+    "url": "https://www.linkedin.com/jobs/view/4399511510",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer EMEA (CIAM)",
+    "company": "neuco",
+    "url": "https://www.linkedin.com/jobs/view/4399504460",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer - (Asia) Remote",
+    "company": "Talkpush",
+    "url": "https://www.linkedin.com/jobs/view/4399169412",
+    "location": "Bangkok, Bangkok City, Thailand",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Cloud Solutions Architect",
+    "company": "Opti9 Tech",
+    "url": "https://www.linkedin.com/jobs/view/4401367946",
+    "location": "Omaha, NE",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Site Reliability Engineer",
+    "company": "Cloudbeds",
+    "url": "https://www.linkedin.com/jobs/view/4401340264",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Site Reliability Engineer",
+    "company": "Cloudbeds",
+    "url": "https://www.linkedin.com/jobs/view/4401331712",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Software Engineer(Azure, .NET, AI)",
+    "company": "Solugenix",
+    "url": "https://www.linkedin.com/jobs/view/4401328775",
+    "location": "Hyderabad, Telangana, India",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Artificial Intelligence Engineer",
+    "company": "Maxwell Bond",
+    "url": "https://www.linkedin.com/jobs/view/4399644985",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Site Reliability Engineer",
+    "company": "Cloudbeds",
+    "url": "https://www.linkedin.com/jobs/view/4401328746",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Site Reliability Engineer",
+    "company": "Cloudbeds",
+    "url": "https://www.linkedin.com/jobs/view/4401339279",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer - Global",
+    "company": "SHI International Corp.",
+    "url": "https://www.linkedin.com/jobs/view/4399565646",
+    "location": "Tennessee, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Affinity.co",
+    "url": "https://www.linkedin.com/jobs/view/4401531149",
+    "location": "New York, NY",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Manager Software Engineering",
+    "company": "Precision Medicine Group",
+    "url": "https://www.linkedin.com/jobs/view/4399694379",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solution Engineer",
+    "company": "Sumo Logic",
+    "url": "https://www.linkedin.com/jobs/view/4389066181",
+    "location": "Noida, Uttar Pradesh, India",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Cloud Pre-sales Solutions Architect",
+    "company": "Optimum Healthcare IT",
+    "url": "https://www.linkedin.com/jobs/view/4399547826",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "DigsFact",
+    "url": "https://www.linkedin.com/jobs/view/4399696788",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer - Global",
+    "company": "SHI International Corp.",
+    "url": "https://www.linkedin.com/jobs/view/4399549930",
+    "location": "Florida, United States",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions / Enterprise Architect - TOGAF, Finance, Azure, SAP - 100% Remote, UK",
+    "company": "MRP-Global",
+    "url": "https://www.linkedin.com/jobs/view/4399136974",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-13",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Dataweavers",
+    "url": "https://www.linkedin.com/jobs/view/4399120338",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "2026-04-12",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "L4 Systems Engineer (US Remote - MSP)",
+    "company": "GXA",
+    "url": "https://www.linkedin.com/jobs/view/4403885387",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "nan",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  },
+  {
+    "title": "Solutions Engineer",
+    "company": "Sprinto",
+    "url": "https://www.linkedin.com/jobs/view/4280850157",
+    "location": "Remote",
+    "source": "jobspy:linkedin",
+    "posted_at": "nan",
+    "tags": [
+      "solutions engineer"
+    ],
+    "description": ""
+  }
+]

@@ -1,0 +1,57 @@
+package model
+
+import (
+	"encoding/json"
+	"fmt"
+	"strconv"
+)
+
+type PendingJob struct {
+	Done    bool
+	URL     string
+	Company string
+	Title   string
+}
+
+type ExternalJob struct {
+	Title       string   `json:"title"`
+	Company     string   `json:"company"`
+	URL         string   `json:"url"`
+	Location    string   `json:"location"`
+	Source      string   `json:"source"`
+	PostedAt    string   `json:"posted_at"`
+	Tags        []string `json:"tags"`
+	Description string   `json:"description"`
+}
+
+func (j *ExternalJob) UnmarshalJSON(data []byte) error {
+	type alias ExternalJob
+	aux := struct {
+		PostedAt any `json:"posted_at"`
+		*alias
+	}{
+		alias: (*alias)(j),
+	}
+
+	if err := json.Unmarshal(data, &aux); err != nil {
+		return err
+	}
+
+	switch value := aux.PostedAt.(type) {
+	case nil:
+		j.PostedAt = ""
+	case string:
+		j.PostedAt = value
+	case float64:
+		j.PostedAt = strconv.FormatInt(int64(value), 10)
+	default:
+		return fmt.Errorf("unsupported posted_at type %T", value)
+	}
+
+	return nil
+}
+
+type DiscoveryData struct {
+	Pending []PendingJob
+	Results []ExternalJob
+}

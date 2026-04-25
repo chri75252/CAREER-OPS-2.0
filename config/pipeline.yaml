@@ -1,0 +1,69 @@
+keywords:
+  - solutions engineer
+  - solutions consultant
+  - solutions architect
+  - customer engineer
+  - technical account manager
+  - technical customer success manager
+  - customer success architect
+  - implementation manager
+  - implementation consultant
+  - professional services consultant
+  - technical program manager
+  - delivery manager
+  - business systems
+  - product operations ai
+  - revenue operations ai
+  - workflow automation
+  - conversational ai
+  - voice ai
+  - procurement automation
+  - spend management
+  - finance operations automation
+  - supply chain software
+  - project controls software
+  - capital projects software
+
+location: "Remote"
+
+max_per_source: 50
+
+rate_limits:
+  feed_delay_seconds: 0.5
+  jobspy_delay_min: 2
+  jobspy_delay_max: 5
+  max_retries: 3
+
+sources:
+  ats:
+    enabled: true
+    providers:
+      - greenhouse
+      - ashby
+      - lever
+
+  feeds:
+    enabled: true
+    sources:
+      - remoteok
+      - remotive
+      - arbeitnow
+      - weworkremotely
+      - jobicy
+      - pythonorg
+
+  jobspy:
+    enabled: true
+    country_indeed: united kingdom
+    hours_old: 168
+    boards:
+      - indeed
+      - linkedin
+      - google
+      - zip_recruiter
+      - glassdoor
+      - bayt
+
+proxies:
+  enabled: false
+  file: "jobspy-wrapper/proxies.txt"

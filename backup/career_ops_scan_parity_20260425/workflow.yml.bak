@@ -1,0 +1,54 @@
+workflow_gates:
+  action_min_score: 4.0
+  auto_pdf_min_score: 3.0
+  apply_ready_min_score: 4.5
+  deep_research_min_score: 4.0
+  high_priority_min_score: 4.2
+
+ranking:
+  queue_min_score: 45
+  reject_below_score: 25
+  weights:
+    title: 35
+    role_family: 20
+    location: 15
+    source: 10
+    seniority: 10
+    company_domain: 5
+    recency: 5
+  tiers:
+    primary: 80
+    secondary: 65
+    stretch: 50
+    weak: 25
+  source_weights:
+    career-ops-scan: 10
+    greenhouse-api: 9
+    ashby-api: 9
+    lever-api: 8
+    linkedin: 7
+    indeed: 6
+    glassdoor: 6
+    bayt: 6
+    google: 6
+    zip_recruiter: 6
+    remoteok: 6
+    remotive: 6
+    weworkremotely: 6
+  location_patterns:
+    strong:
+      - remote
+      - emea
+      - europe
+      - united kingdom
+      - london
+      - dublin
+      - germany
+      - netherlands
+      - uae
+      - abu dhabi
+    weak_negative:
+      - onsite only
+      - on-site only
+      - must be based in us
+      - us only

@@ -1,0 +1,21 @@
+---
+description: Scan job portals and discover new offers
+---
+
+Claude Code equivalent: `/career-ops scan`
+
+Mode: `scan`
+
+Arguments:
+
+`$ARGUMENTS`
+
+Load and execute exactly:
+
+1. `modes/_shared.md`
+2. `modes/scan.md`
+
+Parity rules:
+
+- Run the portal scan flow from the mode instructions.
+- Reflect new results through `data/pipeline.md`, `data/scan-history.tsv`, and `data/external_jobs.json` where applicable.

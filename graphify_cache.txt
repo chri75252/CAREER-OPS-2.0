@@ -1,0 +1,4 @@
+Cache check done in 0.1s
+Cached: 289 nodes, 581 edges, 0 hyperedges
+Uncached: 127 files
+Total files checked: 160

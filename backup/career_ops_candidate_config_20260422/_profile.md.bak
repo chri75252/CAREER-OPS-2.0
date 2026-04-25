@@ -1,0 +1,44 @@
+# User Profile Context -- career-ops
+
+## Your Target Roles
+
+| Archetype | Thematic axes | What they buy |
+|-----------|---------------|---------------|
+| **Applied AI Engineer** | Agent workflows, automation systems, practical AI delivery | Someone who can turn AI concepts into operational systems quickly |
+| **Forward Deployed Engineer** | Client-facing implementation, prototyping, deployment | Someone who can bridge business context and technical delivery |
+| **Solutions Architect** | End-to-end architecture, integrations, reliability | Someone who can design and explain complete systems |
+| **Solutions Engineer** | Discovery, demos, technical positioning, implementation support | Someone who can translate product capability into customer outcomes |
+
+## Your Adaptive Framing
+
+| If the role is... | Emphasize about you... | Proof point sources |
+|-------------------|------------------------|---------------------|
+| Applied AI Engineer | Built practical AI-assisted workflows for real operational use | `cv.md` + `config/profile.yml` |
+| Forward Deployed Engineer | Delivered under deadlines with cross-functional stakeholders | `cv.md` + `config/profile.yml` |
+| Solutions Architect | Structured complex systems and dependencies end-to-end | `cv.md` + `config/profile.yml` |
+| Solutions Engineer | Client-facing communication, negotiation, and execution | `cv.md` + `config/profile.yml` |
+
+## Your Exit Narrative
+
+Use the candidate's exit story from `config/profile.yml` to frame all generated content:
+- Mechanical engineer background
+- Transition into project/operator execution
+- Current focus on AI-assisted automation systems
+
+## Your Cross-cutting Advantage
+
+Frame profile as **operator + builder**:
+- Can handle ambiguous business context
+- Can translate requirements into practical execution
+- Can coordinate technical and non-technical stakeholders
+
+## Your Comp Targets
+
+Use `config/profile.yml` as source of truth for range, minimum, and flexibility.
+
+## Your Location Policy
+
+Use `config/profile.yml` as source of truth:
+- Remote-first preference
+- UAE-compatible roles acceptable
+- Timezone and availability from profile

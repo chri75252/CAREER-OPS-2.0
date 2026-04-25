@@ -1,0 +1,57 @@
+# Pipeline configuration
+
+keywords:
+  - AI engineer
+  - applied AI engineer
+  - AI systems engineer
+  - applied AI
+  - solutions architect
+  - solutions engineer
+  - forward deployed engineer
+  - automation engineer
+  - agent engineer
+  - AI architect
+  - conversational AI
+  - voice AI
+
+location: "Remote"
+
+max_per_source: 50
+
+rate_limits:
+  feed_delay_seconds: 0.5
+  jobspy_delay_min: 2
+  jobspy_delay_max: 5
+  max_retries: 3
+
+sources:
+  ats:
+    enabled: true
+    providers:
+      - greenhouse
+      - ashby
+      - lever
+  
+  feeds:
+    enabled: true
+    sources:
+      - remoteok
+      - remotive
+      - arbeitnow
+      - weworkremotely
+      - jobicy
+      - pythonorg
+  
+  jobspy:
+    enabled: true
+    country_indeed: united arab emirates
+    hours_old: 168
+    boards:
+      - indeed
+      - linkedin
+      - google
+      - zip_recruiter
+
+proxies:
+  enabled: false
+  file: "jobspy-wrapper/proxies.txt"

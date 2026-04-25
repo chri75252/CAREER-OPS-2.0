@@ -1,0 +1,23 @@
+# Example portals.yml — list companies to scan via ATS APIs
+# Each company needs a careers_url or ats_endpoint
+
+companies:
+  - name: "Stripe"
+    careers_url: "https://stripe.com/jobs"
+    enabled: true
+
+  - name: "Notion"
+    careers_url: "https://notion.so/careers"
+    enabled: true
+
+  - name: "Linear"
+    careers_url: "https://linear.app/jobs"
+    enabled: true
+
+  - name: "Vercel"
+    careers_url: "https://vercel.com/careers"
+    enabled: true
+
+  - name: "Figma"
+    careers_url: "https://figma.com/careers"
+    enabled: true

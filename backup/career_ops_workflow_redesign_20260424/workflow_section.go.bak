@@ -1,0 +1,130 @@
+package model
+
+type WorkflowCapability string
+
+const (
+	CapabilityView     WorkflowCapability = "view"
+	CapabilityExternal WorkflowCapability = "external"
+	CapabilityHybrid   WorkflowCapability = "hybrid"
+)
+
+type WorkflowSection struct {
+	Key             string
+	Slug            string
+	Label           string
+	Capability      WorkflowCapability
+	OpenCodeCmd     string
+	ClaudeCmd       string
+	SourceArtifacts []string
+	DashboardView   string
+	EmptyStateHint  string
+}
+
+type WorkflowStatusItem struct {
+	Label string
+	Value string
+}
+
+type WorkflowSectionStatus struct {
+	Section      WorkflowSection
+	Availability string
+	Summary      string
+	Source       string
+	Items        []WorkflowStatusItem
+	Notes        []string
+}
+
+var workflowSections = []WorkflowSection{
+	{
+		Key:             "1",
+		Slug:            "discovery",
+		Label:           "DISCOVERY",
+		Capability:      CapabilityHybrid,
+		OpenCodeCmd:     "/career-ops-scan | python pipeline/run_pipeline.py ...",
+		ClaudeCmd:       "/career-ops scan",
+		SourceArtifacts: []string{"data/pipeline.md", "data/external_jobs.json"},
+		DashboardView:   "Discovery screen",
+		EmptyStateHint:  "Run discovery import/scan and refresh.",
+	},
+	{
+		Key:             "2",
+		Slug:            "pipeline",
+		Label:           "PIPELINE",
+		Capability:      CapabilityHybrid,
+		OpenCodeCmd:     "/career-ops-pipeline",
+		ClaudeCmd:       "/career-ops pipeline",
+		SourceArtifacts: []string{"data/applications.md", "reports/*"},
+		DashboardView:   "Pipeline screen",
+		EmptyStateHint:  "Process pending URLs/JDs to create tracked applications.",
+	},
+	{
+		Key:             "3",
+		Slug:            "pdf",
+		Label:           "PDF",
+		Capability:      CapabilityExternal,
+		OpenCodeCmd:     "/career-ops-pdf",
+		ClaudeCmd:       "/career-ops pdf",
+		SourceArtifacts: []string{"output/*.pdf", "output/*.html"},
+		DashboardView:   "PDF status screen",
+		EmptyStateHint:  "No generated PDFs yet.",
+	},
+	{
+		Key:             "4",
+		Slug:            "apply",
+		Label:           "APPLY",
+		Capability:      CapabilityExternal,
+		OpenCodeCmd:     "/career-ops-apply",
+		ClaudeCmd:       "/career-ops apply",
+		SourceArtifacts: []string{"data/applications.md", "data/follow-ups.md", "reports/apply/*"},
+		DashboardView:   "Apply status screen",
+		EmptyStateHint:  "No tracked applications to apply yet.",
+	},
+	{
+		Key:             "5",
+		Slug:            "track",
+		Label:           "TRACK",
+		Capability:      CapabilityView,
+		OpenCodeCmd:     "/career-ops-tracker",
+		ClaudeCmd:       "/career-ops tracker",
+		SourceArtifacts: []string{"data/applications.md"},
+		DashboardView:   "Progress screen",
+		EmptyStateHint:  "Tracker file has no application entries yet.",
+	},
+	{
+		Key:             "6",
+		Slug:            "deep",
+		Label:           "DEEP",
+		Capability:      CapabilityExternal,
+		OpenCodeCmd:     "/career-ops-deep",
+		ClaudeCmd:       "/career-ops deep",
+		SourceArtifacts: []string{"reports/deep/*", "jds/*"},
+		DashboardView:   "Deep status screen",
+		EmptyStateHint:  "No deep/research artifacts detected.",
+	},
+	{
+		Key:             "7",
+		Slug:            "batch",
+		Label:           "BATCH",
+		Capability:      CapabilityExternal,
+		OpenCodeCmd:     "/career-ops-batch",
+		ClaudeCmd:       "/career-ops batch",
+		SourceArtifacts: []string{"batch/batch-input.tsv", "batch/batch-state.tsv", "reports/*"},
+		DashboardView:   "Batch status screen",
+		EmptyStateHint:  "No batch queue/state files detected.",
+	},
+}
+
+func WorkflowSections() []WorkflowSection {
+	out := make([]WorkflowSection, len(workflowSections))
+	copy(out, workflowSections)
+	return out
+}
+
+func WorkflowSectionByKey(key string) (WorkflowSection, bool) {
+	for _, section := range workflowSections {
+		if section.Key == key {
+			return section, true
+		}
+	}
+	return WorkflowSection{}, false
+}

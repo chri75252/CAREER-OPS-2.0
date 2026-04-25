@@ -1,0 +1,168 @@
+package screens
+
+import (
+	"fmt"
+	"strings"
+
+	tea "github.com/charmbracelet/bubbletea"
+	"github.com/charmbracelet/lipgloss"
+
+	"github.com/santifer/career-ops/dashboard/internal/model"
+	"github.com/santifer/career-ops/dashboard/internal/theme"
+)
+
+func trunc(s string, max int) string {
+	runes := []rune(s)
+	if len(runes) <= max {
+		return s + strings.Repeat(" ", max-len(runes))
+	}
+	return string(runes[:max-2]) + ".."
+}
+
+type HelpModel struct {
+	width  int
+	height int
+	theme  theme.Theme
+}
+
+type HelpClosedMsg struct{}
+
+func NewHelpModel(t theme.Theme, width, height int) HelpModel {
+	return HelpModel{width: width, height: height, theme: t}
+}
+
+func (m HelpModel) Init() tea.Cmd { return nil }
+
+func (m HelpModel) Update(msg tea.Msg) (HelpModel, tea.Cmd) {
+	switch msg := msg.(type) {
+	case tea.KeyMsg:
+		switch msg.String() {
+		case "q", "esc":
+			return m, func() tea.Msg { return HelpClosedMsg{} }
+		case "ctrl+c":
+			return m, tea.Quit
+		}
+	}
+	return m, nil
+}
+
+func (m HelpModel) Resize(width, height int) {
+	m.width = width
+	m.height = height
+}
+
+func (m HelpModel) View() string {
+	return renderHelpShell(m.width, m.renderBody())
+}
+
+func renderHelpShell(width int, body string) string {
+	div := lipgloss.NewStyle().Foreground(lipgloss.Color("#313244")).Render(strings.Repeat("─", width))
+	bar := lipgloss.NewStyle().Foreground(lipgloss.Color("#6C7086")).Render("[?] HELP")
+	cont := lipgloss.NewStyle().Width(width).Foreground(lipgloss.Color("#CDD6F4")).Render(bar)
+	topBar := lipgloss.JoinVertical(lipgloss.Left, div, cont, div)
+	return lipgloss.JoinVertical(lipgloss.Top, topBar, body)
+}
+
+func capabilityBadge(cap model.WorkflowCapability) string {
+	switch cap {
+	case model.CapabilityView:
+		return "[VIEW]"
+	case model.CapabilityHybrid:
+		return "[VIEW+RUN]"
+	default:
+		return "[RUN]"
+	}
+}
+
+func (m HelpModel) renderBody() string {
+	keyStyle := lipgloss.NewStyle().Bold(true).Foreground(m.theme.Sky)
+	valStyle := lipgloss.NewStyle().Foreground(m.theme.Text)
+	dimStyle := lipgloss.NewStyle().Foreground(m.theme.Subtext)
+	headerStyle := lipgloss.NewStyle().Bold(true).Foreground(m.theme.Blue)
+	sectionStyle := lipgloss.NewStyle().Bold(true).Foreground(m.theme.Text)
+	dividerStyle := lipgloss.NewStyle().Foreground(m.theme.Overlay)
+
+	lines := []string{}
+	lines = append(lines, headerStyle.Render("  CAREER-OPS WORKFLOW GUIDE"))
+	lines = append(lines, dividerStyle.Render(strings.Repeat("─", max(1, m.width-4))))
+	lines = append(lines, "")
+
+	lines = append(lines, sectionStyle.Render("  WORKFLOW REFERENCE (truthful capabilities)"))
+	lines = append(lines, "")
+	lines = append(lines, fmt.Sprintf("  %-10s %-12s %-34s %-30s",
+		keyStyle.Render("KEY"),
+		valStyle.Render("MODE"),
+		valStyle.Render("PRIMARY RUNNER"),
+		valStyle.Render("DASHBOARD REFLECTION")))
+	lines = append(lines, dividerStyle.Render(strings.Repeat("─", max(1, m.width-4))))
+
+	sections := model.WorkflowSections()
+	for _, section := range sections {
+		availability := capabilityBadge(section.Capability)
+		availStyle := lipgloss.NewStyle().Foreground(m.theme.Green)
+		if section.Capability == model.CapabilityExternal {
+			availStyle = lipgloss.NewStyle().Foreground(m.theme.Yellow)
+		}
+		line := fmt.Sprintf("  %s %-11s %-34s %-30s",
+			keyStyle.Render("["+section.Key+"]"),
+			availStyle.Render(availability),
+			trunc("OpenCode: "+section.OpenCodeCmd, 32),
+			trunc(section.DashboardView, 28),
+		)
+		lines = append(lines, line)
+	}
+
+	lines = append(lines, "")
+	lines = append(lines, dividerStyle.Render(strings.Repeat("─", max(1, m.width-4))))
+	lines = append(lines, "")
+	lines = append(lines, sectionStyle.Render("  RUNNER NOTE"))
+	lines = append(lines, dimStyle.Render("  Launch root matters. If you start tools from repo parent (CARRER OPS 2.0), commands must exist at that parent root."))
+	lines = append(lines, dimStyle.Render("  OpenCode command files are project commands (e.g. /career-ops-scan, /career-ops-pipeline, /career-ops-pdf)."))
+	lines = append(lines, dimStyle.Render("  Claude slash commands remain /career-ops <mode> when project command surface is loaded."))
+
+	lines = append(lines, "")
+	lines = append(lines, dividerStyle.Render(strings.Repeat("─", max(1, m.width-4))))
+	lines = append(lines, "")
+	lines = append(lines, sectionStyle.Render("  EXACT COMMANDS TO RUN"))
+	lines = append(lines, dimStyle.Render("  Repo parent root: cd \"...\\CARRER OPS 2.0\""))
+	lines = append(lines, dimStyle.Render("  Career-Ops root: cd \"...\\CARRER OPS 2.0\\career-ops\""))
+	lines = append(lines, dimStyle.Render("  Dashboard: cd \"...\\career-ops\\dashboard\" && go build -o career-dashboard.exe . && .\\career-dashboard.exe --path .."))
+	lines = append(lines, dimStyle.Render("  Discovery (pipeline dir): python .\\run_pipeline.py \"AI engineer\" \"applied AI engineer\" \"solutions engineer\""))
+	lines = append(lines, dimStyle.Render("  Fast scan/import (career-ops dir): npm run scan && npm run import:external"))
+	lines = append(lines, dimStyle.Render("  OpenCode parent-root commands: /career-ops, /career-ops-scan, /career-ops-pipeline, /career-ops-pdf, /career-ops-apply, /career-ops-tracker, /career-ops-deep, /career-ops-batch"))
+	lines = append(lines, dimStyle.Render("  Claude parent-root commands: /career-ops, /career-ops scan, /career-ops pipeline, /career-ops pdf, /career-ops apply"))
+
+	lines = append(lines, "")
+	lines = append(lines, dividerStyle.Render(strings.Repeat("─", max(1, m.width-4))))
+	lines = append(lines, "")
+	lines = append(lines, sectionStyle.Render("  WHY TABS CAN STAY EMPTY"))
+	lines = append(lines, dimStyle.Render("  run_pipeline.py populates Discovery artifacts only (queue/results)."))
+	lines = append(lines, dimStyle.Render("  Pipeline/Track require tracker rows in data/applications.md."))
+	lines = append(lines, dimStyle.Render("  PDF requires output/*.pdf or related reports."))
+	lines = append(lines, dimStyle.Render("  Apply requires applications.md and optionally follow-ups.md."))
+
+	lines = append(lines, "")
+	lines = append(lines, dividerStyle.Render(strings.Repeat("─", max(1, m.width-4))))
+	lines = append(lines, "")
+	lines = append(lines, sectionStyle.Render("  SOURCE CONTRACT BY SECTION"))
+	for _, section := range sections {
+		lines = append(lines, dimStyle.Render("  ["+section.Key+"] "+section.Label+" -> "+strings.Join(section.SourceArtifacts, ", ")))
+	}
+
+	lines = append(lines, "")
+	lines = append(lines, dividerStyle.Render(strings.Repeat("─", max(1, m.width-4))))
+	lines = append(lines, "")
+	lines = append(lines, sectionStyle.Render("  KEYBOARD REFERENCE"))
+	lines = append(lines, dimStyle.Render("  GENERAL: Ctrl+C quit | d discovery | a applications | 1..7 sections | ? help"))
+	lines = append(lines, dimStyle.Render("  DISCOVERY: 1/2 tabs | j/k nav | o open URL | a pipeline | r refresh"))
+	lines = append(lines, dimStyle.Render("  PIPELINE: h/l tabs | s sort | v grouped/flat | c status | Enter report | p track | r refresh"))
+	lines = append(lines, dimStyle.Render("  TRACK: j/k scroll | Esc back"))
+	lines = append(lines, dimStyle.Render("  PDF/APPLY/DEEP/BATCH: r refresh status | Esc back"))
+	lines = append(lines, dimStyle.Render("  VIEWER: j/k scroll | PgUp/PgDn | g/G top/bottom | Esc back"))
+
+	lines = append(lines, "")
+	lines = append(lines, dividerStyle.Render(strings.Repeat("─", max(1, m.width-4))))
+	lines = append(lines, dimStyle.Render("  dashboard reflects artifacts; workflow execution remains external in this pass."))
+
+	return strings.Join(lines, "\n")
+}

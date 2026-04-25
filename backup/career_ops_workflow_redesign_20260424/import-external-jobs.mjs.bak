@@ -1,0 +1,121 @@
+#!/usr/bin/env node
+
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+const root = process.cwd();
+const dataDir = resolve(root, 'data');
+const externalJobsPath = resolve(dataDir, 'external_jobs.json');
+const pipelinePath = resolve(dataDir, 'pipeline.md');
+
+const PENDING_HEADER = '## Pendientes';
+const PROCESSED_HEADER = '## Procesadas';
+
+function normalizePart(value) {
+  return String(value ?? '')
+    .replace(/\r?\n/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function parseExternalJobs(path) {
+  if (!existsSync(path)) {
+    console.log(`[import:external] Skipped: ${path} does not exist.`);
+    return [];
+  }
+
+  const raw = readFileSync(path, 'utf-8');
+  let parsed;
+  try {
+    parsed = JSON.parse(raw);
+  } catch (error) {
+    throw new Error(`Invalid JSON in ${path}: ${error.message}`);
+  }
+
+  if (!Array.isArray(parsed)) {
+    throw new Error(`Expected an array in ${path}.`);
+  }
+
+  return parsed;
+}
+
+function ensurePipelineTemplate(path) {
+  if (existsSync(path)) {
+    return;
+  }
+
+  mkdirSync(dataDir, { recursive: true });
+  writeFileSync(path, `${PENDING_HEADER}\n\n${PROCESSED_HEADER}\n`, 'utf-8');
+}
+
+function extractExistingUrls(markdown) {
+  const urls = new Set();
+  for (const match of markdown.matchAll(/- \[[ x]\] (https?:\/\/\S+)/g)) {
+    urls.add(match[1].trim());
+  }
+  return urls;
+}
+
+function mapJobsToPendingLines(jobs, existingUrls) {
+  const lines = [];
+  const pendingUrls = new Set(existingUrls);
+
+  for (const job of jobs) {
+    const url = normalizePart(job?.url);
+    const company = normalizePart(job?.company);
+    const title = normalizePart(job?.title);
+
+    if (!url || !company || !title) {
+      continue;
+    }
+
+    if (pendingUrls.has(url)) {
+      continue;
+    }
+
+    pendingUrls.add(url);
+    lines.push(`- [ ] ${url} | ${company} | ${title}`);
+  }
+
+  return lines;
+}
+
+function insertPendingLines(markdown, pendingLines) {
+  if (pendingLines.length === 0) {
+    return markdown;
+  }
+
+  let text = markdown;
+  let pendingHeaderIndex = text.indexOf(PENDING_HEADER);
+  if (pendingHeaderIndex === -1) {
+    text = `${PENDING_HEADER}\n\n${text}`;
+    pendingHeaderIndex = text.indexOf(PENDING_HEADER);
+  }
+
+  const sectionStart = pendingHeaderIndex + PENDING_HEADER.length;
+  const nextSectionIndex = text.indexOf('\n## ', sectionStart);
+  const insertAt = nextSectionIndex === -1 ? text.length : nextSectionIndex;
+  const block = `\n${pendingLines.join('\n')}\n`;
+
+  return text.slice(0, insertAt) + block + text.slice(insertAt);
+}
+
+function main() {
+  const jobs = parseExternalJobs(externalJobsPath);
+  ensurePipelineTemplate(pipelinePath);
+
+  const currentPipeline = readFileSync(pipelinePath, 'utf-8');
+  const existingUrls = extractExistingUrls(currentPipeline);
+  const pendingLines = mapJobsToPendingLines(jobs, existingUrls);
+
+  if (pendingLines.length === 0) {
+    console.log('[import:external] No new external jobs to import.');
+    return;
+  }
+
+  const nextPipeline = insertPendingLines(currentPipeline, pendingLines);
+  writeFileSync(pipelinePath, nextPipeline, 'utf-8');
+  console.log(`[import:external] Imported ${pendingLines.length} external job(s) into data/pipeline.md.`);
+}
+
+main();

@@ -1,0 +1,278 @@
+package data
+
+import (
+	"fmt"
+	"os"
+	"path/filepath"
+	"sort"
+	"strings"
+	"time"
+
+	"github.com/santifer/career-ops/dashboard/internal/model"
+)
+
+func LoadWorkflowSectionStatus(careerOpsPath string, section model.WorkflowSection) model.WorkflowSectionStatus {
+	switch section.Slug {
+	case "pdf":
+		return loadPDFStatus(careerOpsPath, section)
+	case "apply":
+		return loadApplyStatus(careerOpsPath, section)
+	case "deep":
+		return loadDeepStatus(careerOpsPath, section)
+	case "batch":
+		return loadBatchStatus(careerOpsPath, section)
+	default:
+		return model.WorkflowSectionStatus{
+			Section:      section,
+			Availability: "n/a",
+			Summary:      "No dedicated status summary for this section.",
+			Source:       strings.Join(section.SourceArtifacts, ", "),
+		}
+	}
+}
+
+func loadPDFStatus(careerOpsPath string, section model.WorkflowSection) model.WorkflowSectionStatus {
+	pdfPattern := filepath.Join(careerOpsPath, "output", "*.pdf")
+	pdfFiles, _ := filepath.Glob(pdfPattern)
+	reportPattern := filepath.Join(careerOpsPath, "reports", "*.md")
+	reportFiles, _ := filepath.Glob(reportPattern)
+
+	availability := "missing"
+	summary := "No generated PDFs found in output/."
+	items := []model.WorkflowStatusItem{
+		{Label: "PDF files", Value: fmt.Sprintf("%d", len(pdfFiles))},
+		{Label: "Reports", Value: fmt.Sprintf("%d", len(reportFiles))},
+	}
+	notes := []string{"Generate PDFs with /career-ops pdf (OpenCode) or /career-ops pdf (Claude)."}
+
+	if len(pdfFiles) > 0 {
+		availability = "available"
+		summary = fmt.Sprintf("Detected %d generated PDF(s).", len(pdfFiles))
+		items = append(items, model.WorkflowStatusItem{Label: "Latest PDF", Value: latestFileInfo(pdfFiles)})
+	}
+
+	return model.WorkflowSectionStatus{
+		Section:      section,
+		Availability: availability,
+		Summary:      summary,
+		Source:       "output/*.pdf + reports/*",
+		Items:        items,
+		Notes:        notes,
+	}
+}
+
+func loadApplyStatus(careerOpsPath string, section model.WorkflowSection) model.WorkflowSectionStatus {
+	apps := ParseApplications(careerOpsPath)
+	if apps == nil {
+		apps = []model.CareerApplication{}
+	}
+
+	actionable := 0
+	readyToApply := 0
+	inFlight := 0
+	for _, app := range apps {
+		norm := NormalizeStatus(app.Status)
+		switch norm {
+		case "skip", "rejected", "discarded":
+			continue
+		default:
+			actionable++
+		}
+
+		switch norm {
+		case "evaluated":
+			readyToApply++
+		case "applied", "responded", "interview", "offer":
+			inFlight++
+		}
+	}
+
+	followupsPath := filepath.Join(careerOpsPath, "data", "follow-ups.md")
+	followupsPending := countChecklistRows(followupsPath, false)
+
+	availability := "missing"
+	summary := "No tracked applications available for apply workflow context."
+	notes := []string{"Apply mode runs externally; dashboard reflects tracker/follow-up artifacts only."}
+	if actionable > 0 || followupsPending > 0 {
+		availability = "available"
+		summary = fmt.Sprintf("%d actionable application(s), %d follow-up item(s).", actionable, followupsPending)
+	}
+
+	return model.WorkflowSectionStatus{
+		Section:      section,
+		Availability: availability,
+		Summary:      summary,
+		Source:       "data/applications.md + data/follow-ups.md",
+		Items: []model.WorkflowStatusItem{
+			{Label: "Applications", Value: fmt.Sprintf("%d", len(apps))},
+			{Label: "Actionable", Value: fmt.Sprintf("%d", actionable)},
+			{Label: "Ready to apply", Value: fmt.Sprintf("%d", readyToApply)},
+			{Label: "In flight", Value: fmt.Sprintf("%d", inFlight)},
+			{Label: "Follow-up pending", Value: fmt.Sprintf("%d", followupsPending)},
+		},
+		Notes: notes,
+	}
+}
+
+func loadDeepStatus(careerOpsPath string, section model.WorkflowSection) model.WorkflowSectionStatus {
+	reportPattern := filepath.Join(careerOpsPath, "reports", "*.md")
+	reports, _ := filepath.Glob(reportPattern)
+	jdPattern := filepath.Join(careerOpsPath, "jds", "*")
+	jds, _ := filepath.Glob(jdPattern)
+
+	availability := "missing"
+	summary := "No deep/research-adjacent artifacts found."
+	if len(reports) > 0 || len(jds) > 0 {
+		availability = "available"
+		summary = fmt.Sprintf("Detected %d report(s) and %d JD file(s).", len(reports), len(jds))
+	}
+
+	notes := []string{
+		"Deep mode has no dedicated dashboard artifact contract.",
+		"This section summarizes closest related files (reports and saved JDs).",
+	}
+
+	items := []model.WorkflowStatusItem{
+		{Label: "Reports", Value: fmt.Sprintf("%d", len(reports))},
+		{Label: "Saved JDs", Value: fmt.Sprintf("%d", len(jds))},
+	}
+	if len(reports) > 0 {
+		items = append(items, model.WorkflowStatusItem{Label: "Latest report", Value: latestFileInfo(reports)})
+	}
+
+	return model.WorkflowSectionStatus{
+		Section:      section,
+		Availability: availability,
+		Summary:      summary,
+		Source:       "reports/* + jds/*",
+		Items:        items,
+		Notes:        notes,
+	}
+}
+
+func loadBatchStatus(careerOpsPath string, section model.WorkflowSection) model.WorkflowSectionStatus {
+	inputPath := filepath.Join(careerOpsPath, "batch", "batch-input.tsv")
+	statePath := filepath.Join(careerOpsPath, "batch", "batch-state.tsv")
+	inputCount := countTSVRows(inputPath)
+	totalState, byStatus := parseBatchState(statePath)
+	reportPattern := filepath.Join(careerOpsPath, "reports", "*.md")
+	reports, _ := filepath.Glob(reportPattern)
+
+	availability := "missing"
+	summary := "No batch queue/state files detected."
+	if inputCount > 0 || totalState > 0 {
+		availability = "available"
+		summary = fmt.Sprintf("Batch queue has %d input row(s) and %d state row(s).", inputCount, totalState)
+	}
+
+	items := []model.WorkflowStatusItem{
+		{Label: "Batch input rows", Value: fmt.Sprintf("%d", inputCount)},
+		{Label: "Batch state rows", Value: fmt.Sprintf("%d", totalState)},
+		{Label: "Reports", Value: fmt.Sprintf("%d", len(reports))},
+	}
+
+	if len(byStatus) > 0 {
+		keys := make([]string, 0, len(byStatus))
+		for k := range byStatus {
+			keys = append(keys, k)
+		}
+		sort.Strings(keys)
+		parts := make([]string, 0, len(keys))
+		for _, key := range keys {
+			parts = append(parts, fmt.Sprintf("%s=%d", key, byStatus[key]))
+		}
+		items = append(items, model.WorkflowStatusItem{Label: "State breakdown", Value: strings.Join(parts, ", ")})
+	}
+
+	notes := []string{"Batch execution remains external; dashboard reflects queue/state/report artifacts."}
+	return model.WorkflowSectionStatus{
+		Section:      section,
+		Availability: availability,
+		Summary:      summary,
+		Source:       "batch/batch-input.tsv + batch/batch-state.tsv + reports/*",
+		Items:        items,
+		Notes:        notes,
+	}
+}
+
+func latestFileInfo(paths []string) string {
+	if len(paths) == 0 {
+		return "-"
+	}
+	latest := ""
+	latestMod := time.Time{}
+	for _, p := range paths {
+		info, err := os.Stat(p)
+		if err != nil {
+			continue
+		}
+		if latest == "" || info.ModTime().After(latestMod) {
+			latest = p
+			latestMod = info.ModTime()
+		}
+	}
+	if latest == "" {
+		return "-"
+	}
+	return fmt.Sprintf("%s (%s)", filepath.Base(latest), latestMod.Format("2006-01-02 15:04"))
+}
+
+func countChecklistRows(path string, done bool) int {
+	raw, err := os.ReadFile(path)
+	if err != nil {
+		return 0
+	}
+	needle := "- [ ]"
+	if done {
+		needle = "- [x]"
+	}
+	count := 0
+	for _, line := range strings.Split(string(raw), "\n") {
+		if strings.HasPrefix(strings.TrimSpace(line), needle) {
+			count++
+		}
+	}
+	return count
+}
+
+func countTSVRows(path string) int {
+	raw, err := os.ReadFile(path)
+	if err != nil {
+		return 0
+	}
+	count := 0
+	for _, line := range strings.Split(string(raw), "\n") {
+		trimmed := strings.TrimSpace(line)
+		if trimmed == "" || strings.HasPrefix(trimmed, "id\t") {
+			continue
+		}
+		count++
+	}
+	return count
+}
+
+func parseBatchState(path string) (int, map[string]int) {
+	raw, err := os.ReadFile(path)
+	if err != nil {
+		return 0, map[string]int{}
+	}
+	total := 0
+	byStatus := map[string]int{}
+	for _, line := range strings.Split(string(raw), "\n") {
+		trimmed := strings.TrimSpace(line)
+		if trimmed == "" || strings.HasPrefix(trimmed, "id\t") {
+			continue
+		}
+		fields := strings.Split(trimmed, "\t")
+		if len(fields) < 3 {
+			continue
+		}
+		total++
+		status := strings.TrimSpace(fields[2])
+		if status == "" {
+			status = "unknown"
+		}
+		byStatus[status]++
+	}
+	return total, byStatus
+}

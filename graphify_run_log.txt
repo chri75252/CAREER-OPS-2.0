@@ -1,0 +1,6 @@
+Elapsed: 1.3s
+Total files: 160
+Total words: 1545178
+Code files: 33
+Doc files: 121
+Warning: Large corpus: 160 files · ~1,545,178 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.

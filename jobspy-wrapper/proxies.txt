@@ -1,0 +1,7 @@
+# proxies.txt — add proxy URLs one per line
+# Format: http://user:pass@host:port  OR  http://host:port
+# Leave empty to run without proxies (JobSpy will work on some boards without them)
+
+# Example:
+# http://username:password@proxy.example.com:8080
+# http://proxy.example.com:8080

@@ -1,0 +1,148 @@
+package data
+
+import (
+	"encoding/json"
+	"fmt"
+	"os"
+	"path/filepath"
+	"strings"
+
+	"github.com/santifer/career-ops/dashboard/internal/model"
+)
+
+func ParseDiscovery(careerOpsPath string) (model.DiscoveryData, error) {
+	pending, pendingErr := ParsePendingQueue(careerOpsPath)
+	results, resultsErr := ParseExternalJobs(careerOpsPath)
+	if os.IsNotExist(resultsErr) {
+		resultsErr = nil
+		results = []model.ExternalJob{}
+	}
+	discovery := model.DiscoveryData{}
+	if pendingErr == nil {
+		discovery.Pending = pending
+	}
+	if resultsErr == nil {
+		discovery.Results = results
+	}
+
+	if pendingErr != nil && resultsErr != nil {
+		return discovery, fmt.Errorf("load discovery failed: pending queue: %v; external jobs: %v", pendingErr, resultsErr)
+	}
+
+	if pendingErr != nil {
+		return discovery, fmt.Errorf("load discovery queue: %w", pendingErr)
+	}
+	if resultsErr != nil {
+		return discovery, fmt.Errorf("load external jobs: %w", resultsErr)
+	}
+
+	resultsByURL := make(map[string]model.ExternalJob, len(results))
+	for _, job := range results {
+		url := strings.TrimSpace(job.URL)
+		if url == "" {
+			continue
+		}
+		if _, exists := resultsByURL[url]; exists {
+			continue
+		}
+		resultsByURL[url] = job
+	}
+
+	for i := range pending {
+		if pending[i].Company != "" && pending[i].Title != "" {
+			continue
+		}
+		if external, ok := resultsByURL[pending[i].URL]; ok {
+			if pending[i].Company == "" {
+				pending[i].Company = external.Company
+			}
+			if pending[i].Title == "" {
+				pending[i].Title = external.Title
+			}
+		}
+	}
+
+	discovery.Pending = pending
+	discovery.Results = results
+	return discovery, nil
+}
+
+func ParsePendingQueue(careerOpsPath string) ([]model.PendingJob, error) {
+	path := filepath.Join(careerOpsPath, "data", "pipeline.md")
+	raw, err := os.ReadFile(path)
+	if err != nil {
+		return nil, err
+	}
+
+	lines := strings.Split(string(raw), "\n")
+	jobs := make([]model.PendingJob, 0)
+
+	for _, line := range lines {
+		trimmed := strings.TrimSpace(line)
+		if !strings.HasPrefix(trimmed, "- [") {
+			continue
+		}
+
+		done := strings.HasPrefix(trimmed, "- [x]")
+		payload := trimmed
+		if strings.HasPrefix(payload, "- [ ]") {
+			payload = strings.TrimSpace(strings.TrimPrefix(payload, "- [ ]"))
+		} else if strings.HasPrefix(payload, "- [x]") {
+			payload = strings.TrimSpace(strings.TrimPrefix(payload, "- [x]"))
+		} else {
+			continue
+		}
+
+		parts := strings.Split(payload, " | ")
+		if len(parts) < 1 {
+			continue
+		}
+
+		url := strings.TrimSpace(parts[0])
+		if url == "" || !strings.HasPrefix(url, "http") {
+			continue
+		}
+
+		item := model.PendingJob{Done: done, URL: url}
+		if len(parts) >= 2 {
+			item.Company = strings.TrimSpace(parts[1])
+		}
+		if len(parts) >= 3 {
+			item.Title = strings.TrimSpace(parts[2])
+		}
+		jobs = append(jobs, item)
+	}
+
+	return jobs, nil
+}
+
+func ParseExternalJobs(careerOpsPath string) ([]model.ExternalJob, error) {
+	path := filepath.Join(careerOpsPath, "data", "external_jobs.json")
+	raw, err := os.ReadFile(path)
+	if err != nil {
+		return nil, err
+	}
+
+	trimmed := strings.TrimSpace(string(raw))
+	if trimmed == "" {
+		return []model.ExternalJob{}, nil
+	}
+	if trimmed == "[]" {
+		return []model.ExternalJob{}, nil
+	}
+
+	jobs := make([]model.ExternalJob, 0)
+	if err := json.Unmarshal(raw, &jobs); err != nil {
+		return nil, fmt.Errorf("parse external jobs %s: %w", path, err)
+	}
+
+	filtered := make([]model.ExternalJob, 0, len(jobs))
+	for _, job := range jobs {
+		if strings.TrimSpace(job.URL) == "" {
+			continue
+		}
+		filtered = append(filtered, job)
+	}
+
+	return filtered, nil
+}

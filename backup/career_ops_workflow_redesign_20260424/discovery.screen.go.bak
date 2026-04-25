@@ -1,0 +1,391 @@
+package screens
+
+import (
+	"fmt"
+	"strings"
+
+	tea "github.com/charmbracelet/bubbletea"
+	"github.com/charmbracelet/lipgloss"
+
+	"github.com/santifer/career-ops/dashboard/internal/model"
+	"github.com/santifer/career-ops/dashboard/internal/theme"
+)
+
+type DiscoveryOpenApplicationsMsg struct{}
+type DiscoveryOpenURLMsg struct {
+	URL string
+}
+
+type discoveryTab int
+
+const (
+	discoveryTabQueue discoveryTab = iota
+	discoveryTabResults
+)
+
+type DiscoveryModel struct {
+	data         model.DiscoveryData
+	activeTab    discoveryTab
+	queueCursor  int
+	queueScroll  int
+	resultCursor int
+	resultScroll int
+	width        int
+	height       int
+	theme        theme.Theme
+}
+
+func NewDiscoveryModel(t theme.Theme, data model.DiscoveryData, width, height int) DiscoveryModel {
+	return DiscoveryModel{data: data, activeTab: discoveryTabQueue, width: width, height: height, theme: t}
+}
+
+func (m DiscoveryModel) Init() tea.Cmd {
+	return nil
+}
+
+func (m *DiscoveryModel) Resize(width, height int) {
+	m.width = width
+	m.height = height
+	m.adjustScroll()
+}
+
+func (m DiscoveryModel) Width() int  { return m.width }
+func (m DiscoveryModel) Height() int { return m.height }
+
+func (m DiscoveryModel) WithReloadedData(data model.DiscoveryData) DiscoveryModel {
+	prevQueueURL := ""
+	if len(m.data.Pending) > 0 && m.queueCursor >= 0 && m.queueCursor < len(m.data.Pending) {
+		prevQueueURL = m.data.Pending[m.queueCursor].URL
+	}
+	prevResultURL := ""
+	if len(m.data.Results) > 0 && m.resultCursor >= 0 && m.resultCursor < len(m.data.Results) {
+		prevResultURL = m.data.Results[m.resultCursor].URL
+	}
+
+	m.data = data
+	m.queueCursor = clampCursorByURL(data.Pending, prevQueueURL)
+	m.resultCursor = clampResultCursorByURL(data.Results, prevResultURL)
+	m.adjustScroll()
+	return m
+}
+
+func clampCursorByURL(items []model.PendingJob, url string) int {
+	if len(items) == 0 {
+		return 0
+	}
+	if url != "" {
+		for i := range items {
+			if items[i].URL == url {
+				return i
+			}
+		}
+	}
+	return 0
+}
+
+func clampResultCursorByURL(items []model.ExternalJob, url string) int {
+	if len(items) == 0 {
+		return 0
+	}
+	if url != "" {
+		for i := range items {
+			if items[i].URL == url {
+				return i
+			}
+		}
+	}
+	return 0
+}
+
+func (m DiscoveryModel) currentURL() string {
+	if m.activeTab == discoveryTabQueue {
+		if len(m.data.Pending) == 0 || m.queueCursor < 0 || m.queueCursor >= len(m.data.Pending) {
+			return ""
+		}
+		return m.data.Pending[m.queueCursor].URL
+	}
+	if len(m.data.Results) == 0 || m.resultCursor < 0 || m.resultCursor >= len(m.data.Results) {
+		return ""
+	}
+	return m.data.Results[m.resultCursor].URL
+}
+
+func (m DiscoveryModel) Update(msg tea.Msg) (DiscoveryModel, tea.Cmd) {
+	switch msg := msg.(type) {
+	case tea.KeyMsg:
+		switch msg.String() {
+		case "q", "esc":
+			return m, tea.Quit
+		case "a":
+			return m, func() tea.Msg { return DiscoveryOpenApplicationsMsg{} }
+		case "1":
+			m.activeTab = discoveryTabQueue
+			m.adjustScroll()
+			return m, nil
+		case "2":
+			m.activeTab = discoveryTabResults
+			m.adjustScroll()
+			return m, nil
+		case "tab", "right", "l":
+			if m.activeTab == discoveryTabQueue {
+				m.activeTab = discoveryTabResults
+			} else {
+				m.activeTab = discoveryTabQueue
+			}
+			m.adjustScroll()
+			return m, nil
+		case "left", "h":
+			if m.activeTab == discoveryTabResults {
+				m.activeTab = discoveryTabQueue
+			} else {
+				m.activeTab = discoveryTabResults
+			}
+			m.adjustScroll()
+			return m, nil
+		case "down", "j":
+			m.moveCursor(1)
+			return m, nil
+		case "up", "k":
+			m.moveCursor(-1)
+			return m, nil
+		case "pgdown", "ctrl+d":
+			jump := max(1, m.bodyHeight()/2)
+			m.moveCursor(jump)
+			return m, nil
+		case "pgup", "ctrl+u":
+			jump := max(1, m.bodyHeight()/2)
+			m.moveCursor(-jump)
+			return m, nil
+		case "g":
+			m.setCursor(0)
+			return m, nil
+		case "G":
+			m.setCursor(m.activeLen() - 1)
+			return m, nil
+		case "o", "enter":
+			url := m.currentURL()
+			if url == "" {
+				return m, nil
+			}
+			return m, func() tea.Msg { return DiscoveryOpenURLMsg{URL: url} }
+		case "r":
+			return m, func() tea.Msg { return PipelineRefreshMsg{} }
+		}
+	case tea.WindowSizeMsg:
+		m.width = msg.Width
+		m.height = msg.Height
+		m.adjustScroll()
+	}
+	return m, nil
+}
+
+func (m *DiscoveryModel) activeLen() int {
+	if m.activeTab == discoveryTabQueue {
+		return len(m.data.Pending)
+	}
+	return len(m.data.Results)
+}
+
+func (m *DiscoveryModel) setCursor(target int) {
+	if target < 0 {
+		target = 0
+	}
+	maxIdx := m.activeLen() - 1
+	if maxIdx < 0 {
+		target = 0
+	} else if target > maxIdx {
+		target = maxIdx
+	}
+	if m.activeTab == discoveryTabQueue {
+		m.queueCursor = target
+	} else {
+		m.resultCursor = target
+	}
+	m.adjustScroll()
+}
+
+func (m *DiscoveryModel) moveCursor(delta int) {
+	if m.activeTab == discoveryTabQueue {
+		m.queueCursor += delta
+	} else {
+		m.resultCursor += delta
+	}
+	m.setCursor(m.currentCursor())
+}
+
+func (m DiscoveryModel) currentCursor() int {
+	if m.activeTab == discoveryTabQueue {
+		return m.queueCursor
+	}
+	return m.resultCursor
+}
+
+func (m *DiscoveryModel) adjustScroll() {
+	avail := m.bodyHeight()
+	if avail < 3 {
+		avail = 3
+	}
+	cursor := m.currentCursor()
+	if m.activeTab == discoveryTabQueue {
+		if cursor < m.queueScroll {
+			m.queueScroll = cursor
+		}
+		if cursor >= m.queueScroll+avail {
+			m.queueScroll = cursor - avail + 1
+		}
+		if m.queueScroll < 0 {
+			m.queueScroll = 0
+		}
+	} else {
+		if cursor < m.resultScroll {
+			m.resultScroll = cursor
+		}
+		if cursor >= m.resultScroll+avail {
+			m.resultScroll = cursor - avail + 1
+		}
+		if m.resultScroll < 0 {
+			m.resultScroll = 0
+		}
+	}
+}
+
+func (m DiscoveryModel) bodyHeight() int {
+	h := m.height - 8
+	if h < 5 {
+		h = 5
+	}
+	return h
+}
+
+func (m DiscoveryModel) View() string {
+	return lipgloss.JoinVertical(lipgloss.Left,
+		m.renderHeader(),
+		m.renderTabs(),
+		m.renderBody(),
+		m.renderFooter(),
+	)
+}
+
+func (m DiscoveryModel) renderHeader() string {
+	style := lipgloss.NewStyle().Bold(true).Foreground(m.theme.Text).Background(m.theme.Surface).Width(m.width).Padding(0, 2)
+	title := lipgloss.NewStyle().Bold(true).Foreground(m.theme.Blue).Render("DISCOVERY")
+	queue := fmt.Sprintf("Queue %d", len(m.data.Pending))
+	results := fmt.Sprintf("Results %d", len(m.data.Results))
+	right := lipgloss.NewStyle().Foreground(m.theme.Subtext).Render(queue + " | " + results + " | src: pipeline.md + external_jobs.json")
+	gap := m.width - lipgloss.Width(title) - lipgloss.Width(right) - 4
+	if gap < 1 {
+		gap = 1
+	}
+	return style.Render(title + strings.Repeat(" ", gap) + right)
+}
+
+func (m DiscoveryModel) renderTabs() string {
+	queueStyle := lipgloss.NewStyle().Foreground(m.theme.Subtext)
+	resultStyle := lipgloss.NewStyle().Foreground(m.theme.Subtext)
+	if m.activeTab == discoveryTabQueue {
+		queueStyle = queueStyle.Bold(true).Foreground(m.theme.Sky)
+	} else {
+		resultStyle = resultStyle.Bold(true).Foreground(m.theme.Sky)
+	}
+	line := queueStyle.Render("[1] Queue") + "  " + resultStyle.Render("[2] Results")
+	return lipgloss.NewStyle().Padding(0, 2).Render(line)
+}
+
+func (m DiscoveryModel) renderBody() string {
+	if m.activeTab == discoveryTabQueue {
+		return m.renderQueueBody()
+	}
+	return m.renderResultBody()
+}
+
+func (m DiscoveryModel) renderQueueBody() string {
+	if len(m.data.Pending) == 0 {
+		return lipgloss.NewStyle().Padding(1, 2).Foreground(m.theme.Subtext).Render("No pending jobs in data/pipeline.md (run discovery import/scan and refresh)")
+	}
+	start := m.queueScroll
+	end := start + m.bodyHeight()
+	if end > len(m.data.Pending) {
+		end = len(m.data.Pending)
+	}
+	lines := make([]string, 0, end-start)
+	for i := start; i < end; i++ {
+		item := m.data.Pending[i]
+		cursor := " "
+		if i == m.queueCursor {
+			cursor = ">"
+		}
+		check := "[ ]"
+		if item.Done {
+			check = "[x]"
+		}
+		company := fallback(item.Company, "Unknown")
+		title := fallback(item.Title, item.URL)
+		line := fmt.Sprintf("%s %s %s | %s", cursor, check, company, title)
+		if i == m.queueCursor {
+			line = lipgloss.NewStyle().Background(m.theme.Overlay).Render(line)
+		}
+		lines = append(lines, line)
+	}
+	return lipgloss.NewStyle().Padding(0, 2).Render(strings.Join(lines, "\n"))
+}
+
+func (m DiscoveryModel) renderResultBody() string {
+	if len(m.data.Results) == 0 {
+		return lipgloss.NewStyle().Padding(1, 2).Foreground(m.theme.Subtext).Render("No discovery results in data/external_jobs.json (pipeline ingestion may not have run yet)")
+	}
+	start := m.resultScroll
+	end := start + m.bodyHeight()
+	if end > len(m.data.Results) {
+		end = len(m.data.Results)
+	}
+	lines := make([]string, 0, end-start)
+	for i := start; i < end; i++ {
+		item := m.data.Results[i]
+		cursor := " "
+		if i == m.resultCursor {
+			cursor = ">"
+		}
+		source := fallback(item.Source, "unknown")
+		company := fallback(item.Company, "Unknown")
+		title := fallback(item.Title, item.URL)
+		location := fallback(item.Location, "-")
+		line := fmt.Sprintf("%s [%s] %s | %s | %s", cursor, source, company, title, location)
+		if i == m.resultCursor {
+			line = lipgloss.NewStyle().Background(m.theme.Overlay).Render(line)
+		}
+		lines = append(lines, line)
+	}
+	return lipgloss.NewStyle().Padding(0, 2).Render(strings.Join(lines, "\n"))
+}
+
+func (m DiscoveryModel) renderFooter() string {
+	style := lipgloss.NewStyle().Foreground(m.theme.Subtext).Background(m.theme.Surface).Width(m.width).Padding(0, 1)
+	key := lipgloss.NewStyle().Bold(true).Foreground(m.theme.Text)
+	desc := lipgloss.NewStyle().Foreground(m.theme.Subtext)
+	keys := key.Render("1/2") + desc.Render(" tab  ") +
+		key.Render("↑↓/jk") + desc.Render(" nav  ") +
+		key.Render("o/Enter") + desc.Render(" open URL  ") +
+		key.Render("a") + desc.Render(" applications  ") +
+		key.Render("Esc") + desc.Render(" quit")
+	brand := lipgloss.NewStyle().Foreground(m.theme.Overlay).Render("source: data/pipeline.md + data/external_jobs.json")
+	gap := m.width - lipgloss.Width(keys) - lipgloss.Width(brand) - 2
+	if gap < 1 {
+		gap = 1
+	}
+	return style.Render(keys + strings.Repeat(" ", gap) + brand)
+}
+
+func fallback(value, fallbackValue string) string {
+	trimmed := strings.TrimSpace(value)
+	if trimmed == "" {
+		return fallbackValue
+	}
+	return trimmed
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
